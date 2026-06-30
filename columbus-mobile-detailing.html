@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Columbus Mobile Detailing — Professional Auto Detailing in Gahanna & Columbus OH</title>
+  <meta name="description" content="Columbus Mobile Detailing brings professional auto detailing to your home or workplace. Serving Gahanna, New Albany, Reynoldsburg &amp; Pickerington, OH." />
+  <link rel="canonical" href="https://columbusmobiledetailing.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Columbus Mobile Detailing">
+  <meta property="og:title" content="Columbus Mobile Detailing — Professional Auto Detailing | Gahanna &amp; Columbus, OH">
+  <meta property="og:description" content="Professional mobile auto detailing brought to your home or workplace. Serving Gahanna, New Albany, Reynoldsburg, Pickerington &amp; Columbus metro.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Columbus Mobile Detailing — We Come To You">
+  <meta name="twitter:description" content="Mobile auto detailing in Gahanna &amp; Columbus metro. We bring the detail shop to your door. Book online today.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Columbus Mobile Detailing",
+    "description": "Professional mobile auto detailing brought to your home or workplace. Serving Gahanna, New Albany, Reynoldsburg, Pickerington, and Columbus metro.",
+    "url": "https://columbusmobiledetailing.com/",
+    "telephone": "(614) 302-6466",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gahanna",
+      "addressRegion": "OH",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Gahanna", "New Albany", "Reynoldsburg", "Pickerington", "Columbus"],
+    "priceRange": "$$"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            page:   '#F4EFE7',
+            palt:   '#EDE7DD',
+            pdark:  '#1A130A',
+            ink:    '#14110D',
+            mid:    '#6B655C',
+            dim:    '#9B9388',
+            ghost:  '#D8D2C8',
+            accent: '#C06810',
+            alo:    '#D97C20',
+            ahi:    '#884808',
+            rule:   '#DDD8D0',
+            ruledk: '#C8C1B6',
+          },
+          fontFamily: {
+            heading: ['"Barlow Condensed"', 'sans-serif'],
+            body:    ['"Fira Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --page: #F4EFE7; --palt: #EDE7DD; --pdark: #1A130A;
+      --ink: #14110D; --mid: #6B655C; --dim: #9B9388;
+      --accent: #C06810; --alo: #D97C20; --ahi: #884808;
+      --rule: #DDD8D0; --ruledk: #C8C1B6;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: 'Fira Sans', sans-serif; background-color: #F4EFE7; color: #14110D; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4, h5 { font-family: 'Barlow Condensed', sans-serif; }
+    .sec-label { font-family: 'Fira Sans', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--dim); }
+
+    /* ── Nav ── */
+    #main-nav {
+      transition: opacity 0.3s ease;
+    }
+    #main-nav.scrolled {
+      background: rgba(244, 239, 231, 0.97);
+      box-shadow: 0 2px 16px rgba(20,17,13,0.10);
+      backdrop-filter: blur(12px);
+    }
+    #main-nav.scrolled .nav-link { color: #6B655C !important; }
+    #main-nav.scrolled .nav-phone { color: #14110D !important; }
+    #main-nav.scrolled .nav-logo-text { color: #14110D !important; }
+
+    /* ── Ghost numeral columns ── */
+    .ghost-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: clamp(5rem, 12vw, 9rem);
+      line-height: 1;
+      color: rgba(20,17,13,0.07);
+      display: block;
+      margin-bottom: 0.25rem;
+      user-select: none;
+    }
+
+    /* ── CTA buttons ── */
+    .btn-orange {
+      background: #C06810;
+      color: #F4EFE7;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.75rem 1.75rem;
+      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-orange:hover {
+      transform: translateY(-2px);
+      background: var(--alo);
+    }
+    .btn-outline {
+      background: transparent;
+      color: rgba(244,239,231,0.75);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.75rem 1.75rem;
+      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+      border: 1px solid rgba(244,239,231,0.25);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-outline:hover {
+      transform: translateY(-2px);
+      opacity: 0.85;
+    }
+
+    /* ── Service columns (editorial divide, no card borders) ── */
+    .service-col {
+      background: transparent;
+      transition: opacity 0.2s ease;
+    }
+    .service-col:hover {
+      opacity: 0.88;
+    }
+
+    /* ── Price tiers — lead (sedan) stays accent, secondary tiers use ink ── */
+    .price-lead { color: var(--accent); }
+    .price-secondary { color: var(--ink); }
+
+    /* ── Testimonial quote sizing ── */
+    .tq-body {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-style: italic;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Route motif in service-area block ── */
+    .route-motif {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      opacity: 1;
+    }
+
+    /* ── Gallery photos ── */
+    .gallery-frame {
+      border-radius: 4px;
+      overflow: hidden;
+      height: 220px;
+      position: relative;
+    }
+    .gallery-frame img {
+      width: 100%; height: 100%; object-fit: cover;
+      display: block;
+    }
+    .gallery-caption {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--mid);
+      margin-top: 0.5rem;
+      display: block;
+    }
+
+    /* ── Testimonials ── */
+    .testimonial-quote {
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-frame { height: 200px !important; }
+    }
+
+    /* ── Section headings ── */
+    .section-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .section-heading {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      line-height: 1.05;
+      color: var(--ink);
+    }
+
+    /* ── Price table ── */
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(20,17,13,0.08);
+    }
+    .price-row:last-child { border-bottom: none; }
+
+    /* ── Form inputs ── */
+    .form-input {
+      width: 100%;
+      background: #F4EFE7;
+      border: 1px solid #C8C1B6;
+      border-radius: 3px;
+      padding: 0.75rem 1rem;
+      color: #14110D;
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 0.95rem;
+      transition: opacity 0.15s ease;
+      outline: none;
+    }
+    .form-input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .form-input::placeholder { color: #9B9388; }
+    .form-label {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #6B655C;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Hairline rule under section eyebrow ── */
+    .section-rule {
+      width: 40px;
+      height: 1px;
+      background: var(--rule);
+      margin: 0.6rem 0 1.25rem;
+    }
+
+    /* Mobile nav */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+
+    /* ADR-002 v3 gated start states (Motion One) */
+    html.js-motion-ready [data-anim="scroll-reveal"] {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    html.js-motion-ready [data-anim="hero-fade"] {
+      opacity: 0;
+    }
+    html.js-motion-ready [data-anim="hero-rise"] {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    *:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-[200] focus:bg-accent focus:text-ink focus:px-4 focus:py-3 focus:text-sm focus:font-bold">Skip to main content</a>
+
+<!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 px-4 py-3" style="background: rgba(26,19,10,0.82); backdrop-filter: blur(10px);">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center nav-logo-text" style="text-decoration:none;">
+      <span class="nav-logo-text" style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.25rem; letter-spacing:0.04em; line-height:1; color:rgba(244,239,231,0.92);">
+        Columbus Mobile Detailing
+      </span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <div class="hidden md:flex items-center gap-6">
+      <a href="#services" class="nav-link" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.9rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.6); text-decoration:none; transition:opacity 0.15s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity=''">Services</a>
+      <a href="#how-it-works" class="nav-link" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.9rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.6); text-decoration:none; transition:opacity 0.15s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity=''">How It Works</a>
+      <a href="#gallery" class="nav-link" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.9rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.6); text-decoration:none; transition:opacity 0.15s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity=''">Gallery</a>
+      <a href="#pricing" class="nav-link" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.9rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.6); text-decoration:none; transition:opacity 0.15s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity=''">Pricing</a>
+      <a href="#contact" class="nav-link" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.9rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.6); text-decoration:none; transition:opacity 0.15s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity=''">Contact</a>
+    </div>
+
+    <!-- Right: phone + CTA -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="tel:6143026466" class="nav-phone" style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; color:rgba(244,239,231,0.75); text-decoration:none; display:flex; align-items:center; gap:0.4rem;">
+        (614) 302-6466
+      </a>
+      <a href="#book" class="btn-orange" style="padding:0.55rem 1.25rem; font-size:0.85rem;">
+        Book Your Detail
+      </a>
+    </div>
+
+    <!-- Mobile: phone + hamburger -->
+    <div class="flex md:hidden items-center gap-3">
+      <a href="tel:6143026466" style="color:rgba(244,239,231,0.7); font-size:1.3rem;">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+      <button onclick="toggleMobileMenu()" style="color:rgba(244,239,231,0.85); background:none; border:none; font-size:1.4rem; cursor:pointer;">
+        <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="flex-col gap-1 pt-3 pb-2 mt-3 md:hidden" style="border-top:1px solid rgba(244,239,231,0.1);">
+    <a href="#services" onclick="closeMobileMenu()" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:1rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.65); text-decoration:none; padding:0.5rem 0; display:block;">Services</a>
+    <a href="#how-it-works" onclick="closeMobileMenu()" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:1rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.65); text-decoration:none; padding:0.5rem 0; display:block;">How It Works</a>
+    <a href="#gallery" onclick="closeMobileMenu()" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:1rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.65); text-decoration:none; padding:0.5rem 0; display:block;">Gallery</a>
+    <a href="#pricing" onclick="closeMobileMenu()" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:1rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.65); text-decoration:none; padding:0.5rem 0; display:block;">Pricing</a>
+    <a href="#contact" onclick="closeMobileMenu()" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:1rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(244,239,231,0.65); text-decoration:none; padding:0.5rem 0; display:block;">Contact</a>
+    <a href="#book" onclick="closeMobileMenu()" class="btn-orange" style="margin-top:0.5rem; justify-content:center;">Book Your Detail</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <!-- HERO: dark left panel, photo right -->
+  <section id="home" class="relative min-h-screen flex overflow-hidden" style="background-color: #1A130A;">
+    <div class="relative z-10 flex flex-col justify-center w-full lg:w-[52%] px-8 lg:px-16 xl:px-24 pt-20 pb-24">
+      <p class="sec-label mb-8" data-anim="hero-fade" style="color: rgba(244,239,231,0.35);">Gahanna &amp; Columbus, OH &nbsp;·&nbsp; Self-contained mobile unit &nbsp;·&nbsp; No drop-off needed</p>
+      <h1 class="font-heading leading-[0.88] tracking-tight mb-8" data-anim="hero-rise" style="font-size: clamp(3.5rem, 8vw, 7.5rem); font-weight: 700;">
+        <span class="block" style="color: rgba(244,239,231,0.92);">Detail</span>
+        <span class="block" style="color: rgba(244,239,231,0.92);">At Your</span>
+        <span class="block" style="color: var(--accent);">Door.</span>
+      </h1>
+      <p class="text-base leading-relaxed mb-10 max-w-sm" data-anim="hero-rise" style="color: rgba(244,239,231,0.5); line-height: 1.7;">We park, you go back inside. Our fully self-contained unit — water, power, everything — means a showroom finish without leaving your driveway.</p>
+      <div class="flex flex-wrap gap-3" data-anim="hero-rise">
+        <a href="#book" class="btn-orange">Book Your Detail</a>
+        <a href="#services" class="btn-outline">Services &amp; Pricing</a>
+      </div>
+      <div class="absolute bottom-8 left-8 lg:left-16 xl:left-24 sec-label" style="color: rgba(244,239,231,0.18);">Scroll</div>
+    </div>
+    <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-[48%]">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&auto=format&fit=crop&q=85" alt="Columbus Mobile Detailing — professional auto detailing" class="w-full h-full object-cover" style="filter: brightness(0.7);" loading="eager" />
+      <div class="absolute inset-0" style="background: linear-gradient(to right, #1A130A 0%, transparent 30%);"></div>
+    </div>
+    <div class="lg:hidden absolute bottom-0 left-0 right-0 h-40 overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop&q=80" alt="Auto detailing" class="w-full h-full object-cover" style="filter: brightness(0.6);" loading="eager" />
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, #1A130A 0%, transparent 50%);"></div>
+    </div>
+  </section>
+
+<!-- ═══════════════════════════════ HOW IT WORKS ═══════════════════════════════ -->
+<section id="how-it-works" style="background:#EDE7DD; padding: 6rem 1.5rem;">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-14">
+      <p class="section-eyebrow" data-anim="scroll-reveal">Simple Process</p>
+      <div class="section-rule"></div>
+      <h2 class="section-heading" data-anim="scroll-reveal" data-anim-delay="0.1" style="font-size:clamp(2.6rem,6vw,4.5rem);">Three Steps.<br>Zero Hassle.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x" style="border-color:#DDD8D0;">
+
+      <div class="pt-8 md:pt-0 md:pr-10" data-anim="scroll-reveal" data-anim-delay="0.1">
+        <span class="ghost-num">01</span>
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:2rem; font-weight:700; color:#14110D; margin-bottom:0.75rem; line-height:1.1;">Book in 60 Seconds</h3>
+        <p style="color:#6B655C; line-height:1.7; font-size:1rem;">Pick your package, your vehicle type, and a window that works — morning, afternoon, or evening. No phone tag required.</p>
+      </div>
+
+      <div class="pt-8 md:pt-0 md:px-10" data-anim="scroll-reveal" data-anim-delay="0.2">
+        <span class="ghost-num">02</span>
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:2rem; font-weight:700; color:#14110D; margin-bottom:0.75rem; line-height:1.1;">We Pull Up Ready</h3>
+        <p style="color:#6B655C; line-height:1.7; font-size:1rem;">Our self-contained van arrives with its own water supply, power, and professional-grade products. Your water and electric stay untouched.</p>
+      </div>
+
+      <div class="pt-8 md:pt-0 md:pl-10" data-anim="scroll-reveal" data-anim-delay="0.3">
+        <span class="ghost-num">03</span>
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:2rem; font-weight:700; color:#14110D; margin-bottom:0.75rem; line-height:1.1;">Drive Away Proud</h3>
+        <p style="color:#6B655C; line-height:1.7; font-size:1rem;">We work while you work. When we wrap up, your car looks the way it felt the day you drove it off the lot — and you never moved an inch.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SERVICES & PRICING ═══════════════════════════════ -->
+<a id="services" aria-hidden="true" style="display:block; height:0; overflow:hidden;"></a>
+<section id="main-content" style="background:#F4EFE7; padding: 6rem 1.5rem;">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-12">
+      <p class="section-eyebrow" data-anim="scroll-reveal">What We Offer</p>
+      <div class="section-rule"></div>
+      <h2 class="section-heading" data-anim="scroll-reveal" data-anim-delay="0.1" style="font-size:clamp(2.6rem,6vw,4.5rem);">Services &amp; Pricing</h2>
+      <p data-anim="scroll-reveal" data-anim-delay="0.2" style="color:#6B655C; max-width:55ch; margin-top:0.75rem; line-height:1.6; font-size:1rem;">Every price is flat. No travel fee, no supply upcharge — just the package you pick, delivered to your door.</p>
+    </div>
+
+    <!-- Main packages — editorial columns with divide-x (matches How-It-Works) -->
+    <div id="pricing" class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x mb-14" style="border-color:#DDD8D0;">
+
+      <!-- Exterior Wash -->
+      <div class="service-col pt-8 md:pt-0 md:pr-10" data-anim="scroll-reveal" data-anim-delay="0.1">
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:2rem; font-weight:700; color:#14110D; line-height:1.1; margin-bottom:1rem;">Exterior<br>Wash</h3>
+        <ul style="list-style:none; padding:0; margin:0 0 1.5rem; color:#6B655C; line-height:1.85; font-size:1rem;">
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Hand wash &amp; dry</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Wheel &amp; tire cleaning</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Window cleaning (exterior)</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Tire dressing</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Door jamb wipe-down</li>
+        </ul>
+        <div style="border-top:1px solid #DDD8D0; padding-top:1rem; margin-bottom:1.25rem;">
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Sedan</span>
+            <span class="price-lead" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$49</span>
+          </div>
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">SUV / Minivan</span>
+            <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$59</span>
+          </div>
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Truck / Large</span>
+            <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$69</span>
+          </div>
+        </div>
+        <a href="#book" class="btn-orange" style="width:100%; justify-content:center;">Book Now</a>
+      </div>
+
+      <!-- Interior Detail -->
+      <div class="service-col pt-8 md:pt-0 md:px-10" data-anim="scroll-reveal" data-anim-delay="0.2">
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:2rem; font-weight:700; color:#14110D; line-height:1.1; margin-bottom:1rem;">Interior<br>Detail</h3>
+        <ul style="list-style:none; padding:0; margin:0 0 1.5rem; color:#6B655C; line-height:1.85; font-size:1rem;">
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Deep vacuum (seats, carpet, trunk)</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Dashboard &amp; console wipe-down</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Door panel &amp; pocket cleaning</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Window cleaning (interior)</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Leather/vinyl conditioning</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Air vent cleaning</li>
+        </ul>
+        <div style="border-top:1px solid #DDD8D0; padding-top:1rem; margin-bottom:1.25rem;">
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Sedan</span>
+            <span class="price-lead" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$89</span>
+          </div>
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">SUV / Minivan</span>
+            <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$99</span>
+          </div>
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Truck / Large</span>
+            <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$109</span>
+          </div>
+        </div>
+        <a href="#book" class="btn-orange" style="width:100%; justify-content:center;">Book Now</a>
+      </div>
+
+      <!-- Full Detail -->
+      <div class="service-col pt-8 md:pt-0 md:pl-10" data-anim="scroll-reveal" data-anim-delay="0.3">
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:2rem; font-weight:700; color:#14110D; line-height:1.1; margin-bottom:1rem;">Full<br>Detail</h3>
+        <ul style="list-style:none; padding:0; margin:0 0 1.5rem; color:#6B655C; line-height:1.85; font-size:1rem;">
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Everything in Exterior Wash</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Everything in Interior Detail</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Clay bar treatment</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Hand wax &amp; paint sealant</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Exterior trim dressing</li>
+          <li style="display:flex; align-items:baseline; gap:0.5rem;"><span style="color:#9B9388; font-size:0.75rem;">—</span> Engine bay wipe-down</li>
+        </ul>
+        <div style="border-top:1px solid #DDD8D0; padding-top:1rem; margin-bottom:1.25rem;">
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Sedan</span>
+            <span class="price-lead" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$149</span>
+          </div>
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">SUV / Minivan</span>
+            <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$169</span>
+          </div>
+          <div class="price-row">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Truck / Large</span>
+            <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$189</span>
+          </div>
+        </div>
+        <a href="#book" class="btn-orange" style="width:100%; justify-content:center;">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Add-ons -->
+    <div data-anim="scroll-reveal" style="background:#EDE7DD; border:1px solid #DDD8D0; border-radius:4px; padding:2rem;">
+      <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:1.75rem; font-weight:700; color:#14110D; margin-bottom:1.25rem;">Add-On Services</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:0.75rem 1rem; background:#F4EFE7; border-radius:3px;">
+          <div>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-weight:700; color:#14110D; font-size:1.05rem;">Ceramic Coating</div>
+            <div style="font-size:0.85rem; color:#9B9388;">Long-term paint protection</div>
+          </div>
+          <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700; white-space:nowrap;">$199+</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:0.75rem 1rem; background:#F4EFE7; border-radius:3px;">
+          <div>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-weight:700; color:#14110D; font-size:1.05rem;">Odor Treatment</div>
+            <div style="font-size:0.85rem; color:#9B9388;">Ozone treatment + deodorize</div>
+          </div>
+          <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$49</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:0.75rem 1rem; background:#F4EFE7; border-radius:3px;">
+          <div>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-weight:700; color:#14110D; font-size:1.05rem;">Engine Bay Clean</div>
+            <div style="font-size:0.85rem; color:#9B9388;">Degrease &amp; dress</div>
+          </div>
+          <span class="price-secondary" style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700;">$79</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ GALLERY ═══════════════════════════════ -->
+<section id="gallery" style="background:#EDE7DD; padding: 6rem 1.5rem;">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-10">
+      <p class="section-eyebrow" data-anim="scroll-reveal">The Work</p>
+      <div class="section-rule"></div>
+      <h2 class="section-heading" data-anim="scroll-reveal" data-anim-delay="0.1" style="font-size:clamp(2.6rem,6vw,4.5rem);">What A Detail Looks Like</h2>
+      <p data-anim="scroll-reveal" data-anim-delay="0.2" style="color:#6B655C; max-width:50ch; margin-top:0.75rem; line-height:1.6; font-size:1rem;">Every service is performed on-site — exterior to engine bay, we handle it where your car lives.</p>
+    </div>
+
+    <!-- Row 1: hero shot spanning 2 cols, two stacked on the right -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-5">
+
+      <!-- Hero: spans 2 columns, taller aspect ratio -->
+      <div class="lg:col-span-2" data-anim="scroll-reveal" data-anim-delay="0.1">
+        <div class="gallery-frame" style="height:420px;">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&auto=format&fit=crop&q=85" alt="Exterior hand wash and polish" loading="lazy" />
+        </div>
+        <p class="gallery-caption">Exterior hand wash — paint prep &amp; tire dress</p>
+      </div>
+
+      <!-- Two stacked: each ~half the hero height -->
+      <div class="flex flex-col gap-5">
+        <div data-anim="scroll-reveal" data-anim-delay="0.2">
+          <div class="gallery-frame" style="height:196px;">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&auto=format&fit=crop&q=80" alt="Interior detail — dashboard and seats" loading="lazy" />
+          </div>
+          <p class="gallery-caption">Interior detail — seats, dash, console</p>
+        </div>
+        <div data-anim="scroll-reveal" data-anim-delay="0.3">
+          <div class="gallery-frame" style="height:196px;">
+            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&auto=format&fit=crop&q=80" alt="Full detail — SUV exterior" loading="lazy" />
+          </div>
+          <p class="gallery-caption">Full detail — SUV exterior finish</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 2: standard three-up -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+      <div data-anim="scroll-reveal" data-anim-delay="0.1">
+        <div class="gallery-frame">
+          <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=800&auto=format&fit=crop&q=80" alt="Ceramic coating application" loading="lazy" />
+        </div>
+        <p class="gallery-caption">Ceramic coating — long-term paint protection</p>
+      </div>
+
+      <div data-anim="scroll-reveal" data-anim-delay="0.2">
+        <div class="gallery-frame">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=800&auto=format&fit=crop&q=80" alt="Wheel and tire deep cleaning" loading="lazy" />
+        </div>
+        <p class="gallery-caption">Wheel &amp; tire deep clean</p>
+      </div>
+
+      <div data-anim="scroll-reveal" data-anim-delay="0.3">
+        <div class="gallery-frame">
+          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&auto=format&fit=crop&q=80" alt="Engine bay cleaning and dressing" loading="lazy" />
+        </div>
+        <p class="gallery-caption">Engine bay degrease &amp; dress</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SERVICE AREA ═══════════════════════════════ -->
+<section style="background:#F4EFE7; padding: 5rem 1.5rem;">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div>
+        <p class="section-eyebrow" data-anim="scroll-reveal">Where We Serve</p>
+        <div class="section-rule"></div>
+        <h2 class="section-heading" data-anim="scroll-reveal" data-anim-delay="0.1" style="font-size:clamp(2.2rem,5vw,3.5rem); margin-bottom:1rem;">Columbus Metro<br>&amp; East Side</h2>
+        <p data-anim="scroll-reveal" data-anim-delay="0.2" style="color:#6B655C; line-height:1.7; margin-bottom:1.5rem; font-size:1rem;">Based in Gahanna, we cover a wide swath of the Columbus metro. We come to your home or office — just pick a time.</p>
+        <div class="grid grid-cols-2 gap-2" data-anim="scroll-reveal" data-anim-delay="0.3">
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">Gahanna</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">New Albany</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">Reynoldsburg</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">Pickerington</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">Bexley</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">Whitehall</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">Columbus Proper</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#9B9388; font-size:1rem;">+ surrounding areas</div>
+        </div>
+        <div data-anim="scroll-reveal" data-anim-delay="0.4" style="margin-top:1.75rem; padding:1rem 1.25rem; background:#EDE7DD; border:1px solid #DDD8D0; border-radius:3px; display:inline-flex; align-items:center; gap:0.75rem;">
+          <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C; font-size:1rem;">Not sure if we cover you? <a href="tel:6143026466" style="color:#14110D; text-decoration:underline; text-decoration-color:#DDD8D0;">(614) 302-6466</a></span>
+        </div>
+      </div>
+
+      <!-- Coverage block with route motif graphic -->
+      <div data-anim="scroll-reveal" data-anim-delay="0.2" style="position:relative; background:#EDE7DD; border:1px solid #DDD8D0; border-radius:4px; padding:2rem; overflow:hidden;">
+        <!-- Route motif: abstract dotted path radiating from a center point, suggesting van dispatch -->
+        <div class="route-motif" aria-hidden="true">
+          <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="position:absolute; inset:0;">
+            <!-- Origin dot — the van base -->
+            <circle cx="200" cy="140" r="5" fill="rgba(192,104,16,0.35)"/>
+            <circle cx="200" cy="140" r="12" fill="none" stroke="rgba(192,104,16,0.18)" stroke-width="1.5"/>
+            <circle cx="200" cy="140" r="22" fill="none" stroke="rgba(192,104,16,0.10)" stroke-width="1"/>
+            <!-- Route lines — dotted paths radiating outward in six directions -->
+            <line x1="200" y1="140" x2="320" y2="60"  stroke="rgba(192,104,16,0.15)" stroke-width="1" stroke-dasharray="5,8"/>
+            <line x1="200" y1="140" x2="370" y2="140" stroke="rgba(192,104,16,0.15)" stroke-width="1" stroke-dasharray="5,8"/>
+            <line x1="200" y1="140" x2="310" y2="230" stroke="rgba(192,104,16,0.15)" stroke-width="1" stroke-dasharray="5,8"/>
+            <line x1="200" y1="140" x2="80"  y2="230" stroke="rgba(192,104,16,0.12)" stroke-width="1" stroke-dasharray="5,8"/>
+            <line x1="200" y1="140" x2="30"  y2="140" stroke="rgba(192,104,16,0.12)" stroke-width="1" stroke-dasharray="5,8"/>
+            <line x1="200" y1="140" x2="90"  y2="50"  stroke="rgba(192,104,16,0.12)" stroke-width="1" stroke-dasharray="5,8"/>
+            <!-- Destination dots at route ends -->
+            <circle cx="320" cy="60"  r="3" fill="rgba(192,104,16,0.22)"/>
+            <circle cx="370" cy="140" r="3" fill="rgba(192,104,16,0.22)"/>
+            <circle cx="310" cy="230" r="3" fill="rgba(192,104,16,0.22)"/>
+            <circle cx="80"  cy="230" r="3" fill="rgba(192,104,16,0.18)"/>
+            <circle cx="30"  cy="140" r="3" fill="rgba(192,104,16,0.18)"/>
+            <circle cx="90"  cy="50"  r="3" fill="rgba(192,104,16,0.18)"/>
+            <!-- Outer coverage ring — the 25-mile radius boundary suggestion -->
+            <ellipse cx="200" cy="140" rx="170" ry="120" fill="none" stroke="rgba(192,104,16,0.07)" stroke-width="1.5" stroke-dasharray="4,10"/>
+          </svg>
+        </div>
+        <!-- Content sits above the motif -->
+        <div style="position:relative; z-index:1;">
+          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:1.5rem; font-weight:700; color:#14110D; margin-bottom:1rem;">Coverage at a Glance</h3>
+          <p style="color:#6B655C; line-height:1.7; font-size:1rem; margin-bottom:1.25rem;">We typically serve everything within 25 miles of Gahanna, OH — that includes most of Franklin County and parts of Licking and Fairfield Counties.</p>
+          <div style="border-top:1px solid #DDD8D0; padding-top:1.25rem;">
+            <div style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid #DDD8D0;">
+              <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Service radius</span>
+              <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; color:#14110D;">~25 miles from Gahanna</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px solid #DDD8D0;">
+              <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Travel fee</span>
+              <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; color:#14110D;">None</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; padding:0.4rem 0;">
+              <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#6B655C;">Availability</span>
+              <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; color:#14110D;">7 days a week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+<section style="background:#EDE7DD; padding: 6rem 1.5rem;">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-12">
+      <p class="section-eyebrow" data-anim="scroll-reveal">What Customers Say</p>
+      <div class="section-rule"></div>
+      <h2 class="section-heading" data-anim="scroll-reveal" data-anim-delay="0.1" style="font-size:clamp(2.6rem,6vw,4.5rem);">Heard in the Driveway</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <blockquote class="testimonial-quote" data-anim="scroll-reveal" data-anim-delay="0.1">
+        <div style="width:2rem; height:1px; background:#C06810; margin-bottom:1.5rem;"></div>
+        <p class="tq-body">"Pulled right into my driveway Saturday morning and transformed my Tahoe inside and out. I never had to leave the house. Full detail was absolutely worth it."</p>
+        <cite style="font-style:normal;">
+          <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; color:#14110D; display:block;">Marcus T.</span>
+          <span style="font-size:0.85rem; color:#9B9388;">Gahanna, OH</span>
+        </cite>
+      </blockquote>
+
+      <blockquote class="testimonial-quote" data-anim="scroll-reveal" data-anim-delay="0.2">
+        <div style="width:2rem; height:1px; background:#C06810; margin-bottom:1.5rem;"></div>
+        <p class="tq-body">"They came during my lunch break. Car was done before my 1pm call. Interior on my Accord was immaculate — that new-car smell I thought was gone forever."</p>
+        <cite style="font-style:normal;">
+          <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; color:#14110D; display:block;">Sara K.</span>
+          <span style="font-size:0.85rem; color:#9B9388;">New Albany, OH</span>
+        </cite>
+      </blockquote>
+
+      <blockquote class="testimonial-quote" data-anim="scroll-reveal" data-anim-delay="0.3">
+        <div style="width:2rem; height:1px; background:#C06810; margin-bottom:1.5rem;"></div>
+        <p class="tq-body">"Had them come to my office lot. My coworkers asked if I got a new truck. Detail was thorough, price was fair, team was professional. Booked again next month."</p>
+        <cite style="font-style:normal;">
+          <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; color:#14110D; display:block;">Derek W.</span>
+          <span style="font-size:0.85rem; color:#9B9388;">Reynoldsburg, OH</span>
+        </cite>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ BOOKING FORM ═══════════════════════════════ -->
+<section id="book" style="background:#F4EFE7; padding: 6rem 1.5rem;">
+  <div class="max-w-3xl mx-auto">
+    <div class="mb-10">
+      <p class="section-eyebrow" data-anim="scroll-reveal">Ready to Book?</p>
+      <div class="section-rule"></div>
+      <h2 class="section-heading" data-anim="scroll-reveal" data-anim-delay="0.1" style="font-size:clamp(2.6rem,6vw,4.5rem);">Schedule Your Detail</h2>
+      <p data-anim="scroll-reveal" data-anim-delay="0.2" style="color:#6B655C; margin-top:0.75rem; font-size:1rem; line-height:1.6;">Fill out the form and we'll confirm your appointment within a few hours.</p>
+    </div>
+
+    <form data-anim="scroll-reveal" data-anim-delay="0.2" onsubmit="handleBookingSubmit(event)" style="background:#EDE7DD; border:1px solid #DDD8D0; border-radius:4px; padding:2.5rem;">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label class="form-label" for="cmd-name">Full Name</label>
+          <input type="text" id="cmd-name" class="form-input text-base" placeholder="Jane Smith" required />
+        </div>
+        <div>
+          <label class="form-label" for="cmd-phone">Phone Number</label>
+          <input type="tel" id="cmd-phone" class="form-input text-base" placeholder="(614) 555-0000" required />
+        </div>
+        <div class="sm:col-span-2">
+          <label class="form-label" for="cmd-email">Email Address</label>
+          <input type="email" id="cmd-email" class="form-input text-base" placeholder="jane@email.com" required />
+        </div>
+        <div>
+          <label class="form-label" for="cmd-service">Service</label>
+          <select id="cmd-service" class="form-input text-base" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option>Exterior Wash</option>
+            <option>Interior Detail</option>
+            <option>Full Detail</option>
+            <option>Ceramic Coating</option>
+            <option>Odor Treatment</option>
+            <option>Engine Bay Clean</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label" for="cmd-vehicle">Vehicle Type</label>
+          <select id="cmd-vehicle" class="form-input text-base" required>
+            <option value="" disabled selected>Select vehicle type...</option>
+            <option>Sedan / Coupe</option>
+            <option>SUV / Minivan</option>
+            <option>Truck</option>
+            <option>Van</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label" for="cmd-date">Preferred Date</label>
+          <input type="date" id="cmd-date" class="form-input text-base" required />
+        </div>
+        <div>
+          <label class="form-label" for="cmd-time">Time Preference</label>
+          <select id="cmd-time" class="form-input text-base" required>
+            <option value="" disabled selected>Select preference...</option>
+            <option>Morning (8am – 12pm)</option>
+            <option>Afternoon (12pm – 4pm)</option>
+            <option>Evening (4pm – 7pm)</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="form-label" for="cmd-notes">Service Location (Home or Workplace Address)</label>
+          <input type="text" id="cmd-notes" class="form-input text-base" placeholder="123 Main St, Gahanna OH 43230" required />
+        </div>
+      </div>
+
+      <button type="submit" class="btn-orange" style="width:100%; justify-content:center; margin-top:1.75rem; padding:1rem; font-size:1.05rem;">
+        Schedule My Detail
+      </button>
+
+      <p style="text-align:center; font-size:0.85rem; color:#9B9388; margin-top:1rem;">We respond within a few hours. Prefer to call? <a href="tel:6143026466" style="color:#14110D; text-decoration:underline; text-decoration-color:#DDD8D0;">(614) 302-6466</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section id="contact" style="background:#F4EFE7; padding: 5rem 1.5rem; border-top:1px solid #DDD8D0;">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div data-anim="scroll-reveal" data-anim-delay="0.1">
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700; color:#14110D; margin-bottom:0.5rem;">Call or Text</h3>
+        <a href="tel:6143026466" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:1.15rem; color:#14110D; text-decoration:none; display:block; margin-bottom:0.25rem;">(614) 302-6466</a>
+        <p style="color:#9B9388; font-size:0.9rem;">Same day response, usually within a few hours</p>
+      </div>
+      <div data-anim="scroll-reveal" data-anim-delay="0.2">
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700; color:#14110D; margin-bottom:0.5rem;">Email Us</h3>
+        <a href="mailto:Columbusmobiledetail@gmail.com" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#14110D; text-decoration:none; font-size:0.95rem; word-break:break-all; display:block; margin-bottom:0.25rem;">Columbusmobiledetail@gmail.com</a>
+        <p style="color:#9B9388; font-size:0.9rem;">Great for questions and quotes</p>
+      </div>
+      <div data-anim="scroll-reveal" data-anim-delay="0.3">
+        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700; color:#14110D; margin-bottom:0.5rem;">Facebook</h3>
+        <a href="https://facebook.com/CBusMobileDetailing" target="_blank" rel="noopener" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; color:#14110D; text-decoration:none; display:block; margin-bottom:0.25rem;">@CBusMobileDetailing</a>
+        <p style="color:#9B9388; font-size:0.9rem;">Photos, reviews &amp; schedule updates</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer style="background:#1A130A; padding: 2.5rem 1.5rem;">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <div style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.05rem; color:rgba(244,239,231,0.85); line-height:1.1;">Columbus Mobile Detailing</div>
+        <div style="font-size:0.78rem; color:rgba(244,239,231,0.3); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.06em; margin-top:0.2rem;">Gahanna, OH — We come to you</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; justify-content:center;">
+        <a href="tel:6143026466" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.9rem; color:rgba(244,239,231,0.4); text-decoration:none;">(614) 302-6466</a>
+        <a href="https://facebook.com/CBusMobileDetailing" target="_blank" rel="noopener" style="color:rgba(244,239,231,0.4); font-size:1.1rem; transition:opacity 0.15s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity=''">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <span style="font-size:0.8rem; color:rgba(244,239,231,0.25);">&copy; <span id="footer-year"></span> Columbus Mobile Detailing</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════ SCRIPTS ═══════════════════════════════ -->
+<script>
+  // Dynamic footer year
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  // Sticky nav on scroll
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('main-nav');
+    if (window.scrollY > 60) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  // Mobile menu
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('hamburger-icon');
+    menu.classList.toggle('open');
+    icon.className = menu.classList.contains('open') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  }
+  function closeMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('hamburger-icon');
+    menu.classList.remove('open');
+    icon.className = 'fa-solid fa-bars';
+  }
+
+  // Booking form submission
+  function handleBookingSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.innerHTML = 'Request Sent!';
+    btn.style.opacity = '0.7';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = 'Schedule My Detail';
+      btn.style.opacity = '';
+      btn.disabled = false;
+      e.target.reset();
+    }, 4000);
+  }
+</script>
+
+<script>
+/* <!-- motion-one v10.18.0 inline:start --> */
+!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"function"==typeof define&&define.amd?define(["exports"],e):e((t="undefined"!=typeof globalThis?globalThis:t||self).Motion={})}(this,(function(t){"use strict";function e(t,e){-1===t.indexOf(e)&&t.push(e)}function n(t,e){const n=t.indexOf(e);n>-1&&t.splice(n,1)}const i=(t,e,n)=>Math.min(Math.max(n,t),e),r={duration:.3,delay:0,endDelay:0,repeat:0,easing:"ease"},o=t=>"number"==typeof t,s=t=>Array.isArray(t)&&!o(t[0]),a=(t,e,n)=>{const i=e-t;return((n-t)%i+i)%i+t};function c(t,e){return s(t)?t[a(0,t.length,e)]:t}const l=(t,e,n)=>-n*t+n*e+t,u=()=>{},f=t=>t,h=(t,e,n)=>e-t==0?1:(n-t)/(e-t);function d(t,e){const n=t[t.length-1];for(let i=1;i<=e;i++){const r=h(0,e,i);t.push(l(n,1,r))}}function p(t){const e=[0];return d(e,t-1),e}function g(t,e=p(t.length),n=f){const r=t.length,o=r-e.length;return o>0&&d(e,o),o=>{let s=0;for(;s<r-2&&!(o<e[s+1]);s++);let a=i(0,1,h(e[s],e[s+1],o));return a=c(n,s)(a),l(t[s],t[s+1],a)}}const m=t=>Array.isArray(t)&&o(t[0]),y=t=>"object"==typeof t&&Boolean(t.createAnimation),v=t=>"function"==typeof t,w=t=>"string"==typeof t,b={ms:t=>1e3*t,s:t=>t/1e3};function E(t,e){return e?t*(1e3/e):0}const x=(t,e,n)=>(((1-3*n+3*e)*t+(3*n-6*e))*t+3*e)*t,O=1e-7,S=12;function M(t,e,n,i){if(t===e&&n===i)return f;const r=e=>function(t,e,n,i,r){let o,s,a=0;do{s=e+(n-e)/2,o=x(s,i,r)-t,o>0?n=s:e=s}while(Math.abs(o)>O&&++a<S);return s}(e,0,1,t,n);return t=>0===t||1===t?t:x(r(t),e,i)}const T=(t,e="end")=>n=>{const r=(n="end"===e?Math.min(n,.999):Math.max(n,.001))*t,o="end"===e?Math.floor(r):Math.ceil(r);return i(0,1,o/t)},A={ease:M(.25,.1,.25,1),"ease-in":M(.42,0,1,1),"ease-in-out":M(.42,0,.58,1),"ease-out":M(0,0,.58,1)},D=/\((.*?)\)/;function L(t){if(v(t))return t;if(m(t))return M(...t);const e=A[t];if(e)return e;if(t.startsWith("steps")){const e=D.exec(t);if(e){const t=e[1].split(",");return T(parseFloat(t[0]),t[1].trim())}}return f}class k{constructor(t,e=[0,1],{easing:n,duration:i=r.duration,delay:o=r.delay,endDelay:a=r.endDelay,repeat:c=r.repeat,offset:l,direction:u="normal",autoplay:h=!0}={}){if(this.startTime=null,this.rate=1,this.t=0,this.cancelTimestamp=null,this.easing=f,this.duration=0,this.totalDuration=0,this.repeat=0,this.playState="idle",this.finished=new Promise(((t,e)=>{this.resolve=t,this.reject=e})),n=n||r.easing,y(n)){const t=n.createAnimation(e);n=t.easing,e=t.keyframes||e,i=t.duration||i}this.repeat=c,this.easing=s(n)?f:L(n),this.updateDuration(i);const d=g(e,l,s(n)?n.map(L):f);this.tick=e=>{var n;let i=0;i=void 0!==this.pauseTime?this.pauseTime:(e-this.startTime)*this.rate,this.t=i,i/=1e3,i=Math.max(i-o,0),"finished"===this.playState&&void 0===this.pauseTime&&(i=this.totalDuration);const r=i/this.duration;let s=Math.floor(r),c=r%1;!c&&r>=1&&(c=1),1===c&&s--;const l=s%2;("reverse"===u||"alternate"===u&&l||"alternate-reverse"===u&&!l)&&(c=1-c);const f=i>=this.totalDuration?1:Math.min(c,1),h=d(this.easing(f));t(h);void 0===this.pauseTime&&("finished"===this.playState||i>=this.totalDuration+a)?(this.playState="finished",null===(n=this.resolve)||void 0===n||n.call(this,h)):"idle"!==this.playState&&(this.frameRequestId=requestAnimationFrame(this.tick))},h&&this.play()}play(){const t=performance.now();this.playState="running",void 0!==this.pauseTime?this.startTime=t-this.pauseTime:this.startTime||(this.startTime=t),this.cancelTimestamp=this.startTime,this.pauseTime=void 0,this.frameRequestId=requestAnimationFrame(this.tick)}pause(){this.playState="paused",this.pauseTime=this.t}finish(){this.playState="finished",this.tick(0)}stop(){var t;this.playState="idle",void 0!==this.frameRequestId&&cancelAnimationFrame(this.frameRequestId),null===(t=this.reject)||void 0===t||t.call(this,!1)}cancel(){this.stop(),this.tick(this.cancelTimestamp)}reverse(){this.rate*=-1}commitStyles(){}updateDuration(t){this.duration=t,this.totalDuration=t*(this.repeat+1)}get currentTime(){return this.t}set currentTime(t){void 0!==this.pauseTime||0===this.rate?this.pauseTime=t:this.startTime=performance.now()-t/this.rate}get playbackRate(){return this.rate}set playbackRate(t){this.rate=t}}var W=function(){};class j{setAnimation(t){this.animation=t,null==t||t.finished.then((()=>this.clearAnimation())).catch((()=>{}))}clearAnimation(){this.animation=this.generator=void 0}}const R=new WeakMap;function z(t){return R.has(t)||R.set(t,{transforms:[],values:new Map}),R.get(t)}const B=["","X","Y","Z"],P={x:"translateX",y:"translateY",z:"translateZ"},$={syntax:"<angle>",initialValue:"0deg",toDefaultUnit:t=>t+"deg"},V={translate:{syntax:"<length-percentage>",initialValue:"0px",toDefaultUnit:t=>t+"px"},rotate:$,scale:{syntax:"<number>",initialValue:1,toDefaultUnit:f},skew:$},q=new Map,C=t=>`--motion-${t}`,F=["x","y","z"];["translate","scale","rotate","skew"].forEach((t=>{B.forEach((e=>{F.push(t+e),q.set(C(t+e),V[t])}))}));const H=(t,e)=>F.indexOf(t)-F.indexOf(e),I=new Set(F),U=t=>I.has(t),N=(t,n)=>{P[n]&&(n=P[n]);const{transforms:i}=z(t);e(i,n),t.style.transform=_(i)},_=t=>t.sort(H).reduce(G,"").trim(),G=(t,e)=>`${t} ${e}(var(${C(e)}))`,Z=t=>t.startsWith("--"),K=new Set;const X=(t,e)=>document.createElement("div").animate(t,e),Y={cssRegisterProperty:()=>"undefined"!=typeof CSS&&Object.hasOwnProperty.call(CSS,"registerProperty"),waapi:()=>Object.hasOwnProperty.call(Element.prototype,"animate"),partialKeyframes:()=>{try{X({opacity:[1]})}catch(t){return!1}return!0},finished:()=>Boolean(X({opacity:[0,1]},{duration:.001}).finished),linearEasing:()=>{try{X({opacity:0},{easing:"linear(0, 1)"})}catch(t){return!1}return!0}},J={},Q={};for(const t in Y)Q[t]=()=>(void 0===J[t]&&(J[t]=Y[t]()),J[t]);const tt=(t,e)=>v(t)?Q.linearEasing()?`linear(${((t,e)=>{let n="";const i=Math.round(e/.015);for(let e=0;e<i;e++)n+=t(h(0,i-1,e))+", ";return n.substring(0,n.length-2)})(t,e)})`:r.easing:m(t)?et(t):t,et=([t,e,n,i])=>`cubic-bezier(${t}, ${e}, ${n}, ${i})`;const nt=t=>Array.isArray(t)?t:[t];function it(t){return P[t]&&(t=P[t]),U(t)?C(t):t}const rt={get:(t,e)=>{e=it(e);let n=Z(e)?t.style.getPropertyValue(e):getComputedStyle(t)[e];if(!n&&0!==n){const t=q.get(e);t&&(n=t.initialValue)}return n},set:(t,e,n)=>{e=it(e),Z(e)?t.style.setProperty(e,n):t.style[e]=n}};function ot(t,e=!0){if(t&&"finished"!==t.playState)try{t.stop?t.stop():(e&&t.commitStyles(),t.cancel())}catch(t){}}function st(t,e){var n;let i=(null==e?void 0:e.toDefaultUnit)||f;const r=t[t.length-1];if(w(r)){const t=(null===(n=r.match(/(-?[\d.]+)([a-z%]*)/))||void 0===n?void 0:n[2])||"";t&&(i=e=>e+t)}return i}function at(t,e,n,i={},a){const c=window.__MOTION_DEV_TOOLS_RECORD,l=!1!==i.record&&c;let f,{duration:h=r.duration,delay:d=r.delay,endDelay:p=r.endDelay,repeat:g=r.repeat,easing:m=r.easing,persist:w=!1,direction:E,offset:x,allowWebkitAcceleration:O=!1,autoplay:S=!0}=i;const M=z(t),T=U(e);let A=Q.waapi();T&&N(t,e);const D=it(e),L=function(t,e){return t.has(e)||t.set(e,new j),t.get(e)}(M.values,D),k=q.get(D);return ot(L.animation,!(y(m)&&L.generator)&&!1!==i.record),()=>{const r=()=>{var e,n;return null!==(n=null!==(e=rt.get(t,D))&&void 0!==e?e:null==k?void 0:k.initialValue)&&void 0!==n?n:0};let M=function(t,e){for(let n=0;n<t.length;n++)null===t[n]&&(t[n]=n?t[n-1]:e());return t}(nt(n),r);const W=st(M,k);if(y(m)){const t=m.createAnimation(M,"opacity"!==e,r,D,L);m=t.easing,M=t.keyframes||M,h=t.duration||h}if(Z(D)&&(Q.cssRegisterProperty()?function(t){if(!K.has(t)){K.add(t);try{const{syntax:e,initialValue:n}=q.has(t)?q.get(t):{};CSS.registerProperty({name:t,inherits:!1,syntax:e,initialValue:n})}catch(t){}}}(D):A=!1),T&&!Q.linearEasing()&&(v(m)||s(m)&&m.some(v))&&(A=!1),A){k&&(M=M.map((t=>o(t)?k.toDefaultUnit(t):t))),1!==M.length||Q.partialKeyframes()&&!l||M.unshift(r());const e={delay:b.ms(d),duration:b.ms(h),endDelay:b.ms(p),easing:s(m)?void 0:tt(m,h),direction:E,iterations:g+1,fill:"both"};f=t.animate({[D]:M,offset:x,easing:s(m)?m.map((t=>tt(t,h))):void 0},e),f.finished||(f.finished=new Promise(((t,e)=>{f.onfinish=t,f.oncancel=e})));const n=M[M.length-1];f.finished.then((()=>{w||(rt.set(t,D,n),f.cancel())})).catch(u),O||(f.playbackRate=1.000001)}else if(a&&T)M=M.map((t=>"string"==typeof t?parseFloat(t):t)),1===M.length&&M.unshift(parseFloat(r())),f=new a((e=>{rt.set(t,D,W?W(e):e)}),M,Object.assign(Object.assign({},i),{duration:h,easing:m}));else{const e=M[M.length-1];rt.set(t,D,k&&o(e)?k.toDefaultUnit(e):e)}return l&&c(t,e,M,{duration:h,delay:d,easing:m,repeat:g,offset:x},"motion-one"),L.setAnimation(f),f&&!S&&f.pause(),f}}const ct=(t,e)=>t[e]?Object.assign(Object.assign({},t),t[e]):Object.assign({},t);function lt(t,e){var n;return"string"==typeof t?e?(null!==(n=e[t])&&void 0!==n||(e[t]=document.querySelectorAll(t)),t=e[t]):t=document.querySelectorAll(t):t instanceof Element&&(t=[t]),Array.from(t||[])}const ut=t=>t(),ft=(t,e,n=r.duration)=>new Proxy({animations:t.map(ut).filter(Boolean),duration:n,options:e},ht),ht={get:(t,e)=>{const n=t.animations[0];switch(e){case"duration":return t.duration;case"currentTime":return b.s((null==n?void 0:n[e])||0);case"playbackRate":case"playState":return null==n?void 0:n[e];case"finished":return t.finished||(t.finished=Promise.all(t.animations.map(dt)).catch(u)),t.finished;case"stop":return()=>{t.animations.forEach((t=>ot(t)))};case"forEachNative":return e=>{t.animations.forEach((n=>e(n,t)))};default:return void 0===(null==n?void 0:n[e])?void 0:()=>t.animations.forEach((t=>t[e]()))}},set:(t,e,n)=>{switch(e){case"currentTime":n=b.ms(n);case"playbackRate":for(let i=0;i<t.animations.length;i++)t.animations[i][e]=n;return!0}return!1}},dt=t=>t.finished;function pt(t,e,n){return v(t)?t(e,n):t}function gt(t){return function(e,n,i={}){const r=(e=lt(e)).length,o=[];for(let s=0;s<r;s++){const a=e[s];for(const e in n){const c=ct(i,e);c.delay=pt(c.delay,s,r);const l=at(a,e,n[e],c,t);o.push(l)}}return ft(o,i,i.duration)}}const mt=gt(k);function yt(t,e){var n={};for(var i in t)Object.prototype.hasOwnProperty.call(t,i)&&e.indexOf(i)<0&&(n[i]=t[i]);if(null!=t&&"function"==typeof Object.getOwnPropertySymbols){var r=0;for(i=Object.getOwnPropertySymbols(t);r<i.length;r++)e.indexOf(i[r])<0&&Object.prototype.propertyIsEnumerable.call(t,i[r])&&(n[i[r]]=t[i[r]])}return n}function vt(t,e,n,i){var r;return o(e)?e:e.startsWith("-")||e.startsWith("+")?Math.max(0,t+parseFloat(e)):"<"===e?n:null!==(r=i.get(e))&&void 0!==r?r:t}function wt(t,e,i,r,o,s){!function(t,e,i){for(let r=0;r<t.length;r++){const o=t[r];o.at>e&&o.at<i&&(n(t,o),r--)}}(t,o,s);for(let n=0;n<e.length;n++)t.push({value:e[n],at:l(o,s,r[n]),easing:c(i,n)})}function bt(t,e){return t.at===e.at?null===t.value?1:-1:t.at-e.at}function Et(t,e){return!e.has(t)&&e.set(t,{}),e.get(t)}function xt(t,e){return e[t]||(e[t]=[]),e[t]}"function"==typeof SuppressedError&&SuppressedError;const Ot=5;function St(t,e,n){const i=Math.max(e-Ot,0);return E(n-t(i),e-i)}const Mt=100,Tt=10,At=1;const Dt=({stiffness:t=Mt,damping:e=Tt,mass:n=At,from:i=0,to:r=1,velocity:o=0,restSpeed:s,restDistance:a}={})=>{o=o?b.s(o):0;const c={done:!1,hasReachedTarget:!1,current:i,target:r},l=r-i,u=Math.sqrt(t/n)/1e3,f=((t=Mt,e=Tt,n=At)=>e/(2*Math.sqrt(t*n)))(t,e,n),h=Math.abs(l)<5;let d;if(s||(s=h?.01:2),a||(a=h?.005:.5),f<1){const t=u*Math.sqrt(1-f*f);d=e=>r-Math.exp(-f*u*e)*((f*u*l-o)/t*Math.sin(t*e)+l*Math.cos(t*e))}else d=t=>r-Math.exp(-u*t)*(l+(u*l-o)*t);return t=>{c.current=d(t);const e=0===t?o:St(d,t,c.current),n=Math.abs(e)<=s,l=Math.abs(r-c.current)<=a;var u,f,h;return c.done=n&&l,c.hasReachedTarget=(u=i,f=r,h=c.current,u<f&&h>=f||u>f&&h<=f),c}},Lt=10,kt=1e4;function Wt(t){return o(t)&&!isNaN(t)}function jt(t){return w(t)?parseFloat(t):t}function Rt(t){const e=new WeakMap;return(n={})=>{const i=new Map,r=(e=0,r=100,o=0,s=!1)=>{const a=`${e}-${r}-${o}-${s}`;return i.has(a)||i.set(a,t(Object.assign({from:e,to:r,velocity:o},n))),i.get(a)},o=(t,n)=>(e.has(t)||e.set(t,function(t,e=f){let n,i=Lt,r=t(0);const o=[e(r.current)];for(;!r.done&&i<kt;)r=t(i),o.push(e(r.done?r.target:r.current)),void 0===n&&r.hasReachedTarget&&(n=i),i+=Lt;const s=i-Lt;return 1===o.length&&o.push(r.current),{keyframes:o,duration:s/1e3,overshootDuration:(null!=n?n:s)/1e3}}(t,n)),e.get(t));return{createAnimation:(t,e=!0,n,i,s)=>{let a,c,l,u=0,h=f;const d=t.length;if(e){h=st(t,i?q.get(it(i)):void 0);if(l=jt(t[d-1]),d>1&&null!==t[0])c=jt(t[0]);else{const t=null==s?void 0:s.generator;if(t){const{animation:e,generatorStartTime:n}=s,i=(null==e?void 0:e.startTime)||n||0,r=(null==e?void 0:e.currentTime)||performance.now()-i,o=t(r).current;c=o,u=St((e=>t(e).current),r,o)}else n&&(c=jt(n()))}}if(Wt(c)&&Wt(l)){const t=r(c,l,u,null==i?void 0:i.includes("scale"));a=Object.assign(Object.assign({},o(t,h)),{easing:"linear"}),s&&(s.generator=t,s.generatorStartTime=performance.now())}if(!a){a={easing:"ease",duration:o(r(0,100)).overshootDuration}}return a}}}}const zt=Rt(Dt),Bt=Rt((({from:t=0,velocity:e=0,power:n=.8,decay:i=.325,bounceDamping:r,bounceStiffness:o,changeTarget:s,min:a,max:c,restDistance:l=.5,restSpeed:u})=>{i=b.ms(i);const f={hasReachedTarget:!1,done:!1,current:t,target:t},h=t=>void 0===a?c:void 0===c||Math.abs(a-t)<Math.abs(c-t)?a:c;let d=n*e;const p=t+d,g=void 0===s?p:s(p);f.target=g,g!==p&&(d=g-t);const m=t=>-d*Math.exp(-t/i),y=t=>g+m(t),v=t=>{const e=m(t),n=y(t);f.done=Math.abs(e)<=l,f.current=f.done?g:n};let w,E;const x=t=>{var e;(e=f.current,void 0!==a&&e<a||void 0!==c&&e>c)&&(w=t,E=Dt({from:f.current,to:h(f.current),velocity:St(y,t,f.current),damping:r,stiffness:o,restDistance:l,restSpeed:u}))};return x(0),t=>{let e=!1;return E||void 0!==w||(e=!0,v(t),x(t)),void 0!==w&&t>w?(f.hasReachedTarget=!0,E(t-w)):(f.hasReachedTarget=!1,!e&&v(t),f)}})),Pt={any:0,all:1};function $t(t,e,{root:n,margin:i,amount:r="any"}={}){if("undefined"==typeof IntersectionObserver)return()=>{};const o=lt(t),s=new WeakMap,a=new IntersectionObserver((t=>{t.forEach((t=>{const n=s.get(t.target);if(t.isIntersecting!==Boolean(n))if(t.isIntersecting){const n=e(t);v(n)?s.set(t.target,n):a.unobserve(t.target)}else n&&(n(t),s.delete(t.target))}))}),{root:n,rootMargin:i,threshold:"number"==typeof r?r:Pt[r]});return o.forEach((t=>a.observe(t))),()=>a.disconnect()}const Vt=new WeakMap;let qt;function Ct({target:t,contentRect:e,borderBoxSize:n}){var i;null===(i=Vt.get(t))||void 0===i||i.forEach((i=>{i({target:t,contentSize:e,get size(){return function(t,e){if(e){const{inlineSize:t,blockSize:n}=e[0];return{width:t,height:n}}return t instanceof SVGElement&&"getBBox"in t?t.getBBox():{width:t.offsetWidth,height:t.offsetHeight}}(t,n)}})}))}function Ft(t){t.forEach(Ct)}function Ht(t,e){qt||"undefined"!=typeof ResizeObserver&&(qt=new ResizeObserver(Ft));const n=lt(t);return n.forEach((t=>{let n=Vt.get(t);n||(n=new Set,Vt.set(t,n)),n.add(e),null==qt||qt.observe(t)})),()=>{n.forEach((t=>{const n=Vt.get(t);null==n||n.delete(e),(null==n?void 0:n.size)||null==qt||qt.unobserve(t)}))}}const It=new Set;let Ut;function Nt(t){return It.add(t),Ut||(Ut=()=>{const t={width:window.innerWidth,height:window.innerHeight},e={target:window,size:t,contentSize:t};It.forEach((t=>t(e)))},window.addEventListener("resize",Ut)),()=>{It.delete(t),!It.size&&Ut&&(Ut=void 0)}}function _t(t,e){return v(t)?Nt(t):Ht(t,e)}const Gt=50,Zt={x:{length:"Width",position:"Left"},y:{length:"Height",position:"Top"}};function Kt(t,e,n,i){const r=n[e],{length:o,position:s}=Zt[e],a=r.current,c=n.time;r.current=t[`scroll${s}`],r.scrollLength=t[`scroll${o}`]-t[`client${o}`],r.offset.length=0,r.offset[0]=0,r.offset[1]=r.scrollLength,r.progress=h(0,r.scrollLength,r.current);const l=i-c;r.velocity=l>Gt?0:E(r.current-a,l)}const Xt={Enter:[[0,1],[1,1]],Exit:[[0,0],[1,0]],Any:[[1,0],[0,1]],All:[[0,0],[1,1]]},Yt={start:0,center:.5,end:1};function Jt(t,e,n=0){let i=0;if(void 0!==Yt[t]&&(t=Yt[t]),w(t)){const e=parseFloat(t);t.endsWith("px")?i=e:t.endsWith("%")?t=e/100:t.endsWith("vw")?i=e/100*document.documentElement.clientWidth:t.endsWith("vh")?i=e/100*document.documentElement.clientHeight:t=e}return o(t)&&(i=e*t),n+i}const Qt=[0,0];function te(t,e,n,i){let r=Array.isArray(t)?t:Qt,s=0,a=0;return o(t)?r=[t,t]:w(t)&&(r=(t=t.trim()).includes(" ")?t.split(" "):[t,Yt[t]?t:"0"]),s=Jt(r[0],n,i),a=Jt(r[1],e),s-a}const ee={x:0,y:0};function ne(t,e,n){let{offset:i=Xt.All}=n;const{target:r=t,axis:o="y"}=n,s="y"===o?"height":"width",a=r!==t?function(t,e){let n={x:0,y:0},i=t;for(;i&&i!==e;)if(i instanceof HTMLElement)n.x+=i.offsetLeft,n.y+=i.offsetTop,i=i.offsetParent;else if(i instanceof SVGGraphicsElement&&"getBBox"in i){const{top:t,left:e}=i.getBBox();for(n.x+=e,n.y+=t;i&&"svg"!==i.tagName;)i=i.parentNode}return n}(r,t):ee,c=r===t?{width:t.scrollWidth,height:t.scrollHeight}:{width:r.clientWidth,height:r.clientHeight},l={width:t.clientWidth,height:t.clientHeight};e[o].offset.length=0;let u=!e[o].interpolate;const f=i.length;for(let t=0;t<f;t++){const n=te(i[t],l[s],c[s],a[o]);u||n===e[o].interpolatorOffsets[t]||(u=!0),e[o].offset[t]=n}u&&(e[o].interpolate=g(p(f),e[o].offset),e[o].interpolatorOffsets=[...e[o].offset]),e[o].progress=e[o].interpolate(e[o].current)}function ie(t,e,n,i={}){const r=i.axis||"y";return{measure:()=>function(t,e=t,n){if(n.x.targetOffset=0,n.y.targetOffset=0,e!==t){let i=e;for(;i&&i!=t;)n.x.targetOffset+=i.offsetLeft,n.y.targetOffset+=i.offsetTop,i=i.offsetParent}n.x.targetLength=e===t?e.scrollWidth:e.clientWidth,n.y.targetLength=e===t?e.scrollHeight:e.clientHeight,n.x.containerLength=t.clientWidth,n.y.containerLength=t.clientHeight}(t,i.target,n),update:e=>{!function(t,e,n){Kt(t,"x",e,n),Kt(t,"y",e,n),e.time=n}(t,n,e),(i.offset||i.target)&&ne(t,n,i)},notify:v(e)?()=>e(n):re(e,n[r])}}function re(t,e){return t.pause(),t.forEachNative(((t,{easing:e})=>{var n,i;if(t.updateDuration)e||(t.easing=f),t.updateDuration(1);else{const r={duration:1e3};e||(r.easing="linear"),null===(i=null===(n=t.effect)||void 0===n?void 0:n.updateTiming)||void 0===i||i.call(n,r)}})),()=>{t.currentTime=e.progress}}const oe=new WeakMap,se=new WeakMap,ae=new WeakMap,ce=t=>t===document.documentElement?window:t;function le(t,e){return function(t){return"object"==typeof t}(t)?t:t&&e?e[t]:void 0}let ue;function fe(){if(!ue)return;const t=ue.sort(de).map(pe);t.forEach(ge),t.forEach(ge),ue=void 0}function he(t){ue?e(ue,t):(ue=[t],requestAnimationFrame(fe))}const de=(t,e)=>t.getDepth()-e.getDepth(),pe=t=>t.animateUpdates(),ge=t=>t.next(),me=(t,e)=>new CustomEvent(t,{detail:{target:e}});function ye(t,e,n){t.dispatchEvent(new CustomEvent(e,{detail:{originalEvent:n}}))}function ve(t,e,n){t.dispatchEvent(new CustomEvent(e,{detail:{originalEntry:n}}))}const we=(t,e,n)=>i=>{i.pointerType&&"mouse"!==i.pointerType||(n(),ye(t,e,i))},be={inView:{isActive:t=>Boolean(t.inView),subscribe:(t,{enable:e,disable:n},{inViewOptions:i={}})=>{const{once:r}=i,o=yt(i,["once"]);return $t(t,(i=>{if(e(),ve(t,"viewenter",i),!r)return e=>{n(),ve(t,"viewleave",e)}}),o)}},hover:{isActive:t=>Boolean(t.hover),subscribe:(t,{enable:e,disable:n})=>{const i=we(t,"hoverstart",e),r=we(t,"hoverend",n);return t.addEventListener("pointerenter",i),t.addEventListener("pointerleave",r),()=>{t.removeEventListener("pointerenter",i),t.removeEventListener("pointerleave",r)}}},press:{isActive:t=>Boolean(t.press),subscribe:(t,{enable:e,disable:n})=>{const i=e=>{n(),ye(t,"pressend",e),window.removeEventListener("pointerup",i)},r=n=>{e(),ye(t,"pressstart",n),window.addEventListener("pointerup",i)};return t.addEventListener("pointerdown",r),()=>{t.removeEventListener("pointerdown",r),window.removeEventListener("pointerup",i)}}}},Ee=["initial","animate",...Object.keys(be),"exit"],xe=new WeakMap;function Oe(t){const e={},n=[];for(let i in t){const r=t[i];U(i)&&(P[i]&&(i=P[i]),n.push(i),i=C(i));let s=Array.isArray(r)?r[0]:r;const a=q.get(i);a&&(s=o(r)?a.toDefaultUnit(r):r),e[i]=s}return n.length&&(e.transform=_(n)),e}const Se=t=>`-${t.toLowerCase()}`;function Me(t,e={}){return ft([()=>{const n=new k(t,[0,1],e);return n.finished.catch((()=>{})),n}],e,e.duration)}t.MotionValue=j,t.ScrollOffset=Xt,t.animate=function(t,e,n){return(v(t)?Me:mt)(t,e,n)},t.animateStyle=at,t.createAnimate=gt,t.createMotionState=function(t={},e){let i,r=e?e.getDepth()+1:0;const o={initial:!0,animate:!0},s={},a={};for(const n of Ee)a[n]="string"==typeof t[n]?t[n]:null==e?void 0:e.getContext()[n];const c=!1===t.initial?"animate":"initial";let l=yt(le(t[c]||a[c],t.variants)||{},["transition"]);const f=Object.assign({},l),h=(t,e)=>()=>{o[t]=e,he(p)},d=()=>{for(const e in be){const n=be[e].isActive(t),r=s[e];n&&!r?s[e]=be[e].subscribe(i,{enable:h(e,!0),disable:h(e,!1)},t):!n&&r&&(r(),delete s[e])}},p={update:e=>{i&&(t=e,d(),he(p))},setActive:(t,e)=>{i&&(o[t]=e,he(p))},animateUpdates:function*(){var e,n;const r=l;l={};const s={};for(const i of Ee){if(!o[i])continue;const r=le(t[i]);if(r)for(const i in r)"transition"!==i&&(l[i]=r[i],s[i]=ct(null!==(n=null!==(e=r.transition)&&void 0!==e?e:t.transition)&&void 0!==n?n:{},i))}const a=new Set([...Object.keys(l),...Object.keys(r)]),c=[];a.forEach((t=>{var e,n,o;void 0===l[t]&&(l[t]=f[t]),n=r[t],o=l[t],typeof n==typeof o&&(Array.isArray(n)&&Array.isArray(o)?function(t,e){const n=e.length;if(n!==t.length)return!1;for(let i=0;i<n;i++)if(e[i]!==t[i])return!1;return!0}(n,o):n===o)||(null!==(e=f[t])&&void 0!==e||(f[t]=rt.get(i,t)),c.push(at(i,t,l[t],s[t],k)))})),yield;const h=c.map((t=>t())).filter(Boolean);if(!h.length)return;const d=l;i.dispatchEvent(me("motionstart",d)),Promise.all(h.map((t=>t.finished))).then((()=>{i.dispatchEvent(me("motioncomplete",d))})).catch(u)},getDepth:()=>r,getTarget:()=>l,getOptions:()=>t,getContext:()=>a,mount:t=>(i=t,xe.set(i,p),d(),()=>{xe.delete(i),function(t){ue&&n(ue,t)}(p);for(const t in s)s[t]()}),isMounted:()=>Boolean(i)};return p},t.createStyleString=function(t={}){const e=Oe(t);let n="";for(const t in e)n+=t.startsWith("--")?t:t.replace(/[A-Z]/g,Se),n+=`: ${e[t]}; `;return n},t.createStyles=Oe,t.getAnimationData=z,t.getStyleName=it,t.glide=Bt,t.inView=$t,t.mountedStates=xe,t.resize=_t,t.scroll=function(t,e={}){var{container:n=document.documentElement}=e,i=yt(e,["container"]);let r=ae.get(n);r||(r=new Set,ae.set(n,r));const o=ie(n,t,{time:0,x:{current:0,offset:[],progress:0,scrollLength:0,targetOffset:0,targetLength:0,containerLength:0,velocity:0},y:{current:0,offset:[],progress:0,scrollLength:0,targetOffset:0,targetLength:0,containerLength:0,velocity:0}},i);if(r.add(o),!oe.has(n)){const t=()=>{const t=performance.now();for(const t of r)t.measure();for(const e of r)e.update(t);for(const t of r)t.notify()};oe.set(n,t);const e=ce(n);window.addEventListener("resize",t,{passive:!0}),n!==document.documentElement&&se.set(n,_t(n,t)),e.addEventListener("scroll",t,{passive:!0})}const s=oe.get(n),a=requestAnimationFrame(s);return()=>{var e;"function"!=typeof t&&t.stop(),cancelAnimationFrame(a);const i=ae.get(n);if(!i)return;if(i.delete(o),i.size)return;const r=oe.get(n);oe.delete(n),r&&(ce(n).removeEventListener("scroll",r),null===(e=se.get(n))||void 0===e||e(),window.removeEventListener("resize",r))}},t.spring=zt,t.stagger=function(t=.1,{start:e=0,from:n=0,easing:i}={}){return(r,s)=>{const a=o(n)?n:function(t,e){if("first"===t)return 0;{const n=e-1;return"last"===t?n:n/2}}(n,s),c=Math.abs(a-r);let l=t*c;if(i){const e=s*t;l=L(i)(l/e)*e}return e+l}},t.style=rt,t.timeline=function(t,e={}){var n;const i=function(t,e={}){var{defaultOptions:n={}}=e,i=yt(e,["defaultOptions"]);const o=[],s=new Map,a={},c=new Map;let l=0,u=0,f=0;for(let e=0;e<t.length;e++){const i=t[e];if(w(i)){c.set(i,u);continue}if(!Array.isArray(i)){c.set(i.name,vt(u,i.at,l,c));continue}const[o,h,g={}]=i;void 0!==g.at&&(u=vt(u,g.at,l,c));let m=0;const v=lt(o,a),b=v.length;for(let t=0;t<b;t++){const e=Et(v[t],s);for(const i in h){const o=xt(i,e);let s=nt(h[i]);const a=ct(g,i);let{duration:c=n.duration||r.duration,easing:l=n.easing||r.easing}=a;if(y(l)){W("opacity"===i||s.length>1);const t=l.createAnimation(s,"opacity"!==i,(()=>0),i);l=t.easing,s=t.keyframes||s,c=t.duration||c}const v=pt(g.delay,t,b)||0,w=u+v,E=w+c;let{offset:x=p(s.length)}=a;1===x.length&&0===x[0]&&(x[1]=1);const O=x.length-s.length;O>0&&d(x,O),1===s.length&&s.unshift(null),wt(o,s,l,x,w,E),m=Math.max(v+c,m),f=Math.max(E,f)}}l=u,u+=m}return s.forEach(((t,e)=>{for(const s in t){const a=t[s];a.sort(bt);const c=[],l=[],u=[];for(let t=0;t<a.length;t++){const{at:e,value:n,easing:i}=a[t];c.push(n),l.push(h(0,f,e)),u.push(i||r.easing)}0!==l[0]&&(l.unshift(0),c.unshift(c[0]),u.unshift("linear")),1!==l[l.length-1]&&(l.push(1),c.push(null)),o.push([e,s,c,Object.assign(Object.assign(Object.assign({},n),{duration:f,easing:u,offset:l}),i)])}})),o}(t,e),o=i.map((t=>at(...t,k))).filter(Boolean);return ft(o,e,null===(n=i[0])||void 0===n?void 0:n[3].duration)},t.withControls=ft}));
+/* <!-- motion-one inline:end --> */
+</script>
+<!-- ADR-002 v3 registration script -->
+<script>
+(function(){
+  if (window.__animRegistered) return;
+
+  function exposeFns() {
+  if (typeof handleBookingSubmit === 'function') window.handleBookingSubmit = handleBookingSubmit;
+  if (typeof toggleMobileMenu === 'function') window.toggleMobileMenu = toggleMobileMenu;
+  }
+
+  function runHeroEntrance() {
+    if (typeof Motion === 'undefined') return;
+    var fades = document.querySelectorAll('[data-anim="hero-fade"]');
+    fades.forEach(function(el, i){
+      Motion.animate(el, { opacity: [0, 1] }, { duration: 0.8, delay: 0.1 + i * 0.12 });
+    });
+    var rises = document.querySelectorAll('[data-anim="hero-rise"]');
+    rises.forEach(function(el, i){
+      Motion.animate(el, { opacity: [0, 1], transform: ['translateY(20px)', 'translateY(0)'] }, { duration: 0.85, delay: 0.25 + i * 0.18, easing: [0.215, 0.61, 0.355, 1] });
+    });
+  }
+
+  function runScrollReveals() {
+    if (typeof Motion === 'undefined') return;
+    var els = document.querySelectorAll('[data-anim="scroll-reveal"]');
+    els.forEach(function(el, i){
+      Motion.inView(el, function(){
+        Motion.animate(el, { opacity: [0, 1], transform: ['translateY(28px)', 'translateY(0)'] }, { duration: 0.7, delay: (i % 3) * 0.08, easing: [0.215, 0.61, 0.355, 1] });
+      }, { amount: 0.12 });
+    });
+  }
+
+  // Expose function handlers immediately (inline onsubmit/onclick fires before DOMContentLoaded).
+  exposeFns();
+
+  document.addEventListener('DOMContentLoaded', function(){
+    if (window.__animRegistered) return;
+    window.__animRegistered = true;
+
+    // ADR-002 v3: read prefers-reduced-motion FIRST.
+    var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (rm) return;
+
+    document.documentElement.classList.add('js-motion-ready');
+    runHeroEntrance();
+    runScrollReveals();
+  });
+})();
+</script>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous"></script>
+<script>
+  const lenis = new Lenis({ syncTouch: true });
+  function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+  requestAnimationFrame(raf);
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var id = this.getAttribute('href');
+      var target = id.length > 1 && document.querySelector(id);
+      if (target) { e.preventDefault(); lenis.scrollTo(target, { offset: -56 }); }
+    });
+  });
+</script>
+</body>
+</html>

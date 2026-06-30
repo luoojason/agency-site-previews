@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cinnaswirl Bakery — Powell, Ohio's artisan cinnamon roll &amp; pastry shop. Fresh baked daily, available at local farmers markets and online. Order now!">
+  <link rel="canonical" href="https://cinnaswirl.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cinnaswirl Bakery">
+  <meta property="og:title" content="Cinnaswirl Bakery — Artisan Cinnamon Rolls &amp; Pastries | Powell, OH">
+  <meta property="og:description" content="Fresh baked artisan cinnamon rolls &amp; pastries — Powell, Ohio's favorite bakery. Order online or find us at local markets.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cinnaswirl Bakery — Powell, OH">
+  <meta name="twitter:description" content="Artisan cinnamon rolls &amp; pastries, fresh baked daily. Powell, Ohio's favorite bakery. Order online!">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Cinnaswirl Bakery",
+    "description": "Powell, Ohio's artisan cinnamon roll and pastry shop. Fresh baked daily, available online and at local farmers markets.",
+    "url": "https://cinnaswirl.com/",
+    "telephone": "(740) 881-6003",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 Spruce St",
+      "addressLocality": "Powell",
+      "addressRegion": "OH",
+      "addressCountry": "US"
+    },
+    "servesCuisine": "Bakery",
+    "priceRange": "$"
+  }
+  </script>
+  <title>Cinnaswirl Bakery — Artisan Cinnamon Rolls & Pastries, Powell OH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            page:  '#F5F0EA',
+            palt:  '#FBF9F6',
+            pdark: '#16100C',
+            ink:   '#221810',
+            mid:   '#6B5848',
+            dim:   '#9E8C7E',
+            ghost: '#C8B8AC',
+            spice: '#8B4A1A',
+            splo:  '#B07040',
+            sphi:  '#6A3410',
+            rule:  '#E0D4C8',
+            ruledk:'#302420',
+          },
+          fontFamily: {
+            heading: ['"Josefin Slab"', 'serif'],
+            body:    ['Mulish', 'sans-serif'],
+          },
+          fontWeight: {
+            300: '300',
+            400: '400',
+            600: '600',
+            700: '700',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --page:  oklch(96%  0.012 75);
+      --palt:  oklch(99%  0.005 75);
+      --pdark: oklch(13%  0.020 50);
+      --ink:   oklch(18%  0.020 55);
+      --mid:   oklch(42%  0.015 55);
+      --dim:   oklch(62%  0.010 55);
+      --ghost: oklch(80%  0.010 65);
+      --spice: oklch(58%  0.110 52);
+      --splo:  oklch(72%  0.080 52);
+      --sphi:  oklch(44%  0.110 52);
+      --rule:  oklch(89%  0.012 70);
+      --ruledk:oklch(22%  0.020 52);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Mulish', sans-serif;
+      background-color: var(--page);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Josefin Slab', serif;
+    }
+
+    /* Tab system */
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .tab-btn.active {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    /* Swirl icon animation — respects prefers-reduced-motion */
+    @keyframes spin-slow {
+      to { transform: rotate(360deg); }
+    }
+    .swirl-spin { display: inline-block; }
+    @media (prefers-reduced-motion: no-preference) {
+      .swirl-spin { animation: spin-slow 8s linear infinite; }
+    }
+
+    /* Motion gated states */
+    html.js-motion-ready [data-anim="scroll-reveal"] {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    html.js-motion-ready [data-anim="hero-fade"] {
+      opacity: 0;
+    }
+    html.js-motion-ready [data-anim="hero-rise"] {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+
+    /* Market schedule zebra */
+    .market-row:nth-child(even) { background: var(--palt); }
+    .market-row:nth-child(odd)  { background: var(--page); }
+
+    *:focus-visible { outline: 2px solid var(--spice); outline-offset: 3px; }
+
+    /* Input styling */
+    .field {
+      width: 100%;
+      border: 1px solid var(--rule);
+      background: var(--palt);
+      color: var(--ink);
+      padding: 0.75rem 1rem;
+      font-family: 'Mulish', sans-serif;
+      font-size: 0.9rem;
+      transition: border-color 0.15s;
+    }
+    .field:focus { outline: none; border-color: var(--spice); }
+    .field::placeholder { color: var(--dim); }
+
+    /* Section divider line */
+    .sec-label {
+      font-family: 'Mulish', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    /* Hero ghost button — replaces inline onmouseover handlers */
+    .hero-ghost-btn {
+      border: 1px solid rgba(245,240,234,0.22);
+      color: rgba(245,240,234,0.5);
+    }
+    .hero-ghost-btn:hover {
+      border-color: rgba(245,240,234,0.45);
+      color: rgba(245,240,234,0.85);
+    }
+
+    /* Footer social icon buttons — replaces inline onmouseover handlers */
+    .footer-social-btn {
+      border-color: var(--ruledk);
+      color: rgba(245,240,234,0.5);
+    }
+    .footer-social-btn:hover {
+      border-color: rgba(245,240,234,0.5);
+      color: rgba(245,240,234,0.9);
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-[200] focus:bg-pdark focus:text-palt focus:px-4 focus:py-3 focus:text-sm focus:font-semibold">Skip to main content</a>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav class="sticky top-0 z-50 border-b border-rule bg-palt/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-14">
+
+        <a href="#home" class="flex items-center gap-2.5">
+          <span class="swirl-spin text-mid text-base opacity-80"><i class="fas fa-circle-notch"></i></span>
+          <span class="font-heading font-600 text-ink tracking-wide text-base">Cinnaswirl</span>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#menu"     class="sec-label text-mid hover:text-ink transition-colors">Menu</a>
+          <a href="#order"    class="sec-label text-mid hover:text-ink transition-colors">Order Online</a>
+          <a href="#schedule" class="sec-label text-mid hover:text-ink transition-colors">Markets</a>
+          <a href="#about"    class="sec-label text-mid hover:text-ink transition-colors">About</a>
+          <a href="#contact"  class="sec-label text-mid hover:text-ink transition-colors">Contact</a>
+          <a href="https://cinnaswirl.square.site" target="_blank"
+             class="bg-ink text-palt text-[11px] font-bold tracking-[0.18em] uppercase px-5 py-2 hover:bg-pdark transition-colors">
+            Order
+          </a>
+        </div>
+
+        <label for="nav-toggle" class="lg:hidden cursor-pointer text-ink">
+          <i class="fas fa-bars text-lg"></i>
+        </label>
+      </div>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="hidden" />
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-rule bg-palt px-6 py-5 space-y-4">
+      <a href="#menu"     class="block sec-label text-mid hover:text-ink transition-colors">Menu</a>
+      <a href="#order"    class="block sec-label text-mid hover:text-ink transition-colors">Order Online</a>
+      <a href="#schedule" class="block sec-label text-mid hover:text-ink transition-colors">Markets</a>
+      <a href="#about"    class="block sec-label text-mid hover:text-ink transition-colors">About</a>
+      <a href="#contact"  class="block sec-label text-mid hover:text-ink transition-colors">Contact</a>
+      <a href="https://cinnaswirl.square.site" target="_blank"
+         class="inline-block bg-ink text-palt text-[11px] font-bold tracking-[0.18em] uppercase px-5 py-2 mt-2 hover:bg-pdark transition-colors">
+        Order Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="home" class="relative min-h-screen flex overflow-hidden" style="background-color: var(--pdark);">
+
+    <!-- LEFT: text content -->
+    <div class="relative z-10 flex flex-col justify-center w-full lg:w-[52%] px-8 lg:px-16 xl:px-24 pt-20 pb-24">
+
+      <p data-anim="hero-fade" class="sec-label mb-8" style="color: rgba(245,240,234,0.35);">
+        Powell, Ohio &nbsp;·&nbsp; Est. 2021 &nbsp;·&nbsp; Fresh batch today
+      </p>
+
+      <h1 data-anim="hero-rise" class="font-heading font-300 leading-[0.88] tracking-tight mb-8"
+          style="font-size: clamp(3.5rem, 8vw, 7.5rem);">
+        <span class="block" style="color: var(--palt);">Sold out</span>
+        <span class="block" style="color: var(--palt);">by noon.</span>
+        <span class="block italic" style="color: var(--spice);">Come early.</span>
+      </h1>
+
+      <p data-anim="hero-rise" class="text-base leading-relaxed mb-10 max-w-sm" style="color: rgba(245,240,234,0.5);">
+        Artisan cinnamon rolls &amp; pastries. Small batch, real butter, Powell Ohio's farmers markets.
+      </p>
+
+      <div data-anim="hero-rise" class="flex flex-wrap gap-3">
+        <a href="https://cinnaswirl.square.site" target="_blank"
+           class="inline-block bg-spice text-palt font-bold text-[11px] tracking-[0.2em] uppercase px-7 py-3.5 hover:bg-sphi transition-colors">
+          Order Online
+        </a>
+        <a href="#menu" class="hero-ghost-btn inline-block font-medium text-[11px] tracking-[0.2em] uppercase px-7 py-3.5 transition-colors">
+          See Menu
+        </a>
+      </div>
+
+      <div class="absolute bottom-8 left-8 lg:left-16 xl:left-24 sec-label" style="color: rgba(245,240,234,0.18);">Scroll</div>
+    </div>
+
+    <!-- RIGHT: product photo -->
+    <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-[48%]">
+      <!-- Replace src with the client's own product photo -->
+      <img
+        src="https://images.unsplash.com/photo-c07YNJmNfaE?w=1200&auto=format&fit=crop&q=85"
+        alt="A pan of freshly baked cinnamon rolls covered in white icing"
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+      <!-- Gradient blend: photo fades into the dark left panel -->
+      <div class="absolute inset-0"
+           style="background: linear-gradient(to right, var(--pdark) 0%, transparent 25%);"></div>
+    </div>
+
+    <!-- Mobile: photo strip below text -->
+    <div class="lg:hidden absolute bottom-0 left-0 right-0 h-48 overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-c07YNJmNfaE?w=800&auto=format&fit=crop&q=80"
+        alt="A pan of freshly baked cinnamon rolls covered in white icing"
+        class="w-full h-full object-cover object-center"
+        loading="eager"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, var(--pdark) 0%, transparent 50%);"></div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       WHY WE'RE SPECIAL
+  ============================================================ -->
+  <span id="main-content" class="sr-only"></span>
+  <section class="py-20 bg-page">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div data-anim="scroll-reveal" class="mb-14">
+        <p class="sec-label mb-4">The Cinnaswirl Difference</p>
+        <h2 class="font-heading font-300 text-ink leading-tight"
+            style="font-size: clamp(2rem, 5vw, 3.5rem);">
+          Why we're&nbsp;special.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-rule">
+
+        <div data-anim="scroll-reveal" class="py-8 md:pr-10">
+          <span class="font-heading text-5xl font-300 leading-none select-none mb-5 block"
+                style="color: var(--rule);">01</span>
+          <h3 class="font-heading text-xl text-ink mb-3">Real Butter, Always</h3>
+          <p class="text-dim text-sm leading-relaxed max-w-xs">
+            Every roll, every pastry, every loaf made with real dairy butter and high-quality ingredients. No substitutes, no shortcuts.
+          </p>
+        </div>
+
+        <div data-anim="scroll-reveal" class="py-8 md:px-10">
+          <span class="font-heading text-5xl font-300 leading-none select-none mb-5 block"
+                style="color: var(--rule);">02</span>
+          <h3 class="font-heading text-xl text-ink mb-3">Fresh Every Morning</h3>
+          <p class="text-dim text-sm leading-relaxed max-w-xs">
+            Our ovens are on before sunrise. Every item baked fresh the day it's sold — at markets, for pickup, or delivered to your door.
+          </p>
+        </div>
+
+        <div data-anim="scroll-reveal" class="py-8 md:pl-10">
+          <span class="font-heading text-5xl font-300 leading-none select-none mb-5 block"
+                style="color: var(--rule);">03</span>
+          <h3 class="font-heading text-xl text-ink mb-3">Licensed Bakery</h3>
+          <p class="text-dim text-sm leading-relaxed max-w-xs">
+            Cinnaswirl is a fully licensed and inspected Ohio cottage bakery. Every bite meets the highest standards of safety and quality.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENU
+  ============================================================ -->
+  <section id="menu" class="py-20 bg-palt">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div data-anim="scroll-reveal" class="mb-12">
+        <p class="sec-label mb-4">Baked With Intention</p>
+        <h2 class="font-heading font-300 text-ink mb-3"
+            style="font-size: clamp(2rem, 5vw, 3.25rem);">
+          Our Menu
+        </h2>
+        <p class="text-dim text-sm max-w-lg leading-relaxed">
+          Small batches. Real, recognizable ingredients. Pre-order for guaranteed availability.
+        </p>
+      </div>
+
+      <!-- Tab buttons -->
+      <div class="flex flex-wrap gap-2 mb-10">
+        <button onclick="switchMenuTab('rolls')" id="menu-btn-rolls"
+                class="tab-btn active px-5 py-2 border border-rule text-[11px] font-bold tracking-[0.18em] uppercase text-mid hover:text-ink hover:border-ink transition-colors">
+          Cinnamon Rolls
+        </button>
+        <button onclick="switchMenuTab('cookies')" id="menu-btn-cookies"
+                class="tab-btn px-5 py-2 border border-rule text-[11px] font-bold tracking-[0.18em] uppercase text-dim hover:text-ink hover:border-ink transition-colors">
+          Cookies
+        </button>
+        <button onclick="switchMenuTab('pastries')" id="menu-btn-pastries"
+                class="tab-btn px-5 py-2 border border-rule text-[11px] font-bold tracking-[0.18em] uppercase text-dim hover:text-ink hover:border-ink transition-colors">
+          Pastries &amp; Breads
+        </button>
+      </div>
+
+      <!-- Tab: Cinnamon Rolls -->
+      <div id="menu-rolls" class="tab-content active">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-rule">
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Signature</span>
+              <span class="font-heading text-spice text-base">$4.50 <span class="text-dim font-300 text-xs">/ $24 doz.</span></span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Classic Cinnamon Roll</h4>
+            <p class="text-dim text-sm leading-relaxed">Pillowy soft dough, brown sugar-cinnamon filling, and a thick vanilla cream cheese glaze. The one that started it all.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Fan Favorite</span>
+              <span class="font-heading text-spice text-base">$5.00 <span class="text-dim font-300 text-xs">/ $27 doz.</span></span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Caramel Pecan Roll</h4>
+            <p class="text-dim text-sm leading-relaxed">Cinnamon filling, toasted Ohio pecans, and house-made sticky caramel baked into every swirl. A caramel lover's dream.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Classic</span>
+              <span class="font-heading text-spice text-base">$4.50 <span class="text-dim font-300 text-xs">/ $24 doz.</span></span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Cream Cheese Frosted Roll</h4>
+            <p class="text-dim text-sm leading-relaxed">Doubled-down whipped cream cheese frosting, lemon zest, and a generous pour that soaks into every fold.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Seasonal</span>
+              <span class="font-heading text-spice text-base">$5.00 <span class="text-dim font-300 text-xs">/ $27 doz.</span></span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Lemon Blueberry Roll</h4>
+            <p class="text-dim text-sm leading-relaxed">Bright lemon curd swirled through the dough with wild blueberry compote and a lemon cream glaze. Light and impossible to resist.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Indulgent</span>
+              <span class="font-heading text-spice text-base">$5.50 <span class="text-dim font-300 text-xs">/ $30 doz.</span></span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Chocolate Hazelnut Roll</h4>
+            <p class="text-dim text-sm leading-relaxed">Dark cocoa filling with toasted hazelnuts and a chocolate ganache drizzle. Nutella rolled into a perfect pastry spiral.</p>
+          </div>
+
+          <div class="bg-palt p-7 flex items-end">
+            <p class="text-dim text-sm leading-relaxed">
+              Whole dozen available for special orders. Custom flavors for events —
+              <a href="#contact" class="text-mid hover:text-ink underline">inquire here.</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab: Cookies -->
+      <div id="menu-cookies" class="tab-content">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-rule">
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Classic</span>
+              <span class="font-heading text-spice text-base">$2.50</span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Snickerdoodle</h4>
+            <p class="text-dim text-sm leading-relaxed">Thick, chewy centers with crispy edges, rolled generously in cinnamon-sugar. Classic comfort in every bite.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Fan Favorite</span>
+              <span class="font-heading text-spice text-base">$3.00</span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Brown Butter Chocolate Chip</h4>
+            <p class="text-dim text-sm leading-relaxed">Nutty browned butter, Guittard dark chocolate chips, flaky sea salt. People drive for these.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Classic</span>
+              <span class="font-heading text-spice text-base">$2.50</span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Oatmeal Raisin</h4>
+            <p class="text-dim text-sm leading-relaxed">Thick rolled oats, plump golden raisins, warm cinnamon-nutmeg spice, chewy center. A proper old-fashioned cookie.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab: Pastries & Breads -->
+      <div id="menu-pastries" class="tab-content">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-rule">
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Weekend Only</span>
+              <span class="font-heading text-spice text-base">$3.50</span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Butter Croissant</h4>
+            <p class="text-dim text-sm leading-relaxed">Hand-laminated, 27 layers of real butter pastry. Shatteringly crisp shell, pillowy interior. Fresh Saturday and Sunday only.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Loaf</span>
+              <span class="font-heading text-spice text-base">$8.00</span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Banana Bread</h4>
+            <p class="text-dim text-sm leading-relaxed">Dark-spotted bananas, brown butter, walnuts, and a hint of vanilla. Dense, moist, and fragrant.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Morning</span>
+              <span class="font-heading text-spice text-base">$3.00</span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Blueberry Muffin</h4>
+            <p class="text-dim text-sm leading-relaxed">Bakery-sized domes packed with fresh Ohio blueberries and a crunchy lemon sugar crust. No boxed-mix shortcuts.</p>
+          </div>
+
+          <div class="bg-palt p-7 group hover:bg-page transition-colors">
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="sec-label">Limited</span>
+              <span class="font-heading text-spice text-base">$10.00</span>
+            </div>
+            <h4 class="font-heading text-xl text-ink mb-2 group-hover:text-ink transition-colors leading-snug">Country Sourdough</h4>
+            <p class="text-dim text-sm leading-relaxed">Long-fermented with our active starter, open crumb, crisp crust. Baked in a Dutch oven. Limited quantities each market.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ORDER ONLINE
+  ============================================================ -->
+  <section id="order" class="py-24" style="background-color: var(--pdark);">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <div data-anim="scroll-reveal" class="mb-12">
+        <p class="sec-label mb-4" style="color: rgba(245,240,234,0.3);">Online Ordering</p>
+        <h2 class="font-heading font-300 leading-tight mb-5"
+            style="color: var(--palt); font-size: clamp(2rem, 5vw, 3.25rem);">
+          Order Pickup Online
+        </h2>
+        <p class="text-sm leading-relaxed max-w-lg" style="color: rgba(245,240,234,0.5);">
+          Pre-order directly through our Square storefront for guaranteed pickup at your preferred location or date. Pre-orders close at <strong style="color: rgba(245,240,234,0.8);">8 PM the day before</strong> your pickup date.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row mb-12">
+
+        <div class="flex-1 relative py-8 pr-8 sm:pr-10">
+          <span class="block text-[9px] font-bold tracking-[0.3em] uppercase mb-3" style="color: rgba(245,240,234,0.28);">Step One</span>
+          <h3 class="font-heading text-base mb-2" style="color: var(--palt);">Choose Your Items</h3>
+          <p class="text-xs leading-relaxed" style="color: rgba(245,240,234,0.45);">Browse our full menu and select quantities. Custom orders and event boxes available.</p>
+          <!-- connector arrow -->
+          <span class="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 text-xs" style="color: var(--ruledk);">&#8594;</span>
+        </div>
+
+        <div class="flex-1 relative py-8 sm:px-10 border-t sm:border-t-0 sm:border-l" style="border-color: var(--ruledk);">
+          <span class="block text-[9px] font-bold tracking-[0.3em] uppercase mb-3" style="color: rgba(245,240,234,0.28);">Step Two</span>
+          <h3 class="font-heading text-base mb-2" style="color: var(--palt);">Pick a Pickup Date</h3>
+          <p class="text-xs leading-relaxed" style="color: rgba(245,240,234,0.45);">Select your preferred date. Market dates and home pickup both available.</p>
+          <span class="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 text-xs" style="color: var(--ruledk);">&#8594;</span>
+        </div>
+
+        <div class="flex-1 py-8 sm:pl-10 border-t sm:border-t-0 sm:border-l" style="border-color: var(--ruledk);">
+          <span class="block text-[9px] font-bold tracking-[0.3em] uppercase mb-3" style="color: rgba(245,240,234,0.28);">Step Three</span>
+          <h3 class="font-heading text-base mb-2" style="color: var(--palt);">Fresh-Baked &amp; Ready</h3>
+          <p class="text-xs leading-relaxed" style="color: rgba(245,240,234,0.45);">Your order is baked fresh the morning of your pickup. No reheating needed.</p>
+        </div>
+
+      </div>
+
+      <a href="https://cinnaswirl.square.site" target="_blank"
+         class="inline-block bg-palt text-ink font-bold text-[12px] tracking-[0.2em] uppercase px-10 py-4 hover:bg-ghost transition-colors">
+        Order at cinnaswirl.square.site
+        <i class="fas fa-arrow-right ml-3 text-xs opacity-70"></i>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARKET SCHEDULE
+  ============================================================ -->
+  <section id="schedule" class="py-20 bg-page">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <div data-anim="scroll-reveal" class="mb-12">
+        <p class="sec-label mb-4">Find Us This Season</p>
+        <h2 class="font-heading font-300 text-ink mb-3"
+            style="font-size: clamp(2rem, 5vw, 3.25rem);">
+          Farmers Market Schedule
+        </h2>
+        <p class="text-dim text-sm max-w-md leading-relaxed">
+          We bring fresh-baked goods to the Columbus metro every weekend. Come early — we sell out.
+        </p>
+      </div>
+
+      <div class="border border-rule overflow-hidden">
+        <div class="grid grid-cols-4 px-5 py-3 border-b border-rule"
+             style="background-color: var(--ink);">
+          <span class="sec-label" style="color: rgba(245,240,234,0.5);">Market</span>
+          <span class="sec-label" style="color: rgba(245,240,234,0.5);">Date</span>
+          <span class="sec-label" style="color: rgba(245,240,234,0.5);">Time</span>
+          <span class="sec-label" style="color: rgba(245,240,234,0.5);">Location</span>
+        </div>
+        <div class="market-row grid grid-cols-4 px-5 py-4 border-b border-rule gap-2 items-center">
+          <span class="font-heading text-ink text-sm">Powell Community Market</span>
+          <span class="text-mid text-sm">Sat, May 3</span>
+          <span class="text-mid text-sm">8 AM – 1 PM</span>
+          <span class="text-dim text-xs">Olentangy Liberty Rd, Powell</span>
+        </div>
+        <div class="market-row grid grid-cols-4 px-5 py-4 border-b border-rule gap-2 items-center">
+          <span class="font-heading text-ink text-sm">Columbus Farmers Market</span>
+          <span class="text-mid text-sm">Sat, May 10</span>
+          <span class="text-mid text-sm">8 AM – 12 PM</span>
+          <span class="text-dim text-xs">59 Spruce St, Columbus</span>
+        </div>
+        <div class="market-row grid grid-cols-4 px-5 py-4 border-b border-rule gap-2 items-center">
+          <span class="font-heading text-ink text-sm">Dublin Farmers Market</span>
+          <span class="text-mid text-sm">Sun, May 18</span>
+          <span class="text-mid text-sm">9 AM – 1 PM</span>
+          <span class="text-dim text-xs">Bridge Park, Dublin OH</span>
+        </div>
+        <div class="market-row grid grid-cols-4 px-5 py-4 border-b border-rule gap-2 items-center">
+          <span class="font-heading text-ink text-sm">Powell Community Market</span>
+          <span class="text-mid text-sm">Sat, May 24</span>
+          <span class="text-mid text-sm">8 AM – 1 PM</span>
+          <span class="text-dim text-xs">Olentangy Liberty Rd, Powell</span>
+        </div>
+        <div class="market-row grid grid-cols-4 px-5 py-4 border-b border-rule gap-2 items-center">
+          <span class="font-heading text-ink text-sm">Columbus Farmers Market</span>
+          <span class="text-mid text-sm">Sat, May 31</span>
+          <span class="text-mid text-sm">8 AM – 12 PM</span>
+          <span class="text-dim text-xs">59 Spruce St, Columbus</span>
+        </div>
+        <div class="market-row grid grid-cols-4 px-5 py-4 gap-2 items-center">
+          <span class="font-heading text-ink text-sm">Dublin Farmers Market</span>
+          <span class="text-mid text-sm">Sun, Jun 8</span>
+          <span class="text-mid text-sm">9 AM – 1 PM</span>
+          <span class="text-dim text-xs">Bridge Park, Dublin OH</span>
+        </div>
+      </div>
+
+      <div class="mt-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <p class="text-dim text-xs">Schedule updated regularly. Follow us for last-minute additions.</p>
+        <a href="https://www.instagram.com/cinnaswirlbakery" target="_blank"
+           class="text-mid text-xs font-semibold tracking-wide hover:text-ink transition-colors">
+          <i class="fab fa-instagram mr-1"></i> @cinnaswirlbakery
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FROM OUR KITCHEN (Instagram grid)
+  ============================================================ -->
+  <section class="py-20 bg-palt">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div data-anim="scroll-reveal" class="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <p class="sec-label mb-4">Fresh From Our Kitchen</p>
+          <h2 class="font-heading font-300 text-ink"
+              style="font-size: clamp(1.75rem, 4vw, 2.75rem);">
+            Follow along.
+          </h2>
+        </div>
+        <a href="https://www.instagram.com/cinnaswirlbakery" target="_blank"
+           class="flex items-center gap-2 text-mid text-[11px] font-bold tracking-[0.2em] uppercase hover:text-ink transition-colors">
+          <i class="fab fa-instagram"></i> @cinnaswirlbakery
+        </a>
+      </div>
+
+      <!-- Instagram link card — replace with embedded feed or real photos when client provides them -->
+      <a href="https://www.instagram.com/cinnaswirlbakery" target="_blank"
+         class="group flex flex-col sm:flex-row items-center gap-8 border border-rule bg-page hover:bg-palt transition-colors p-10 sm:p-14">
+        <div class="shrink-0 w-16 h-16 rounded-full flex items-center justify-center border-2"
+             style="border-color: var(--rule);">
+          <i class="fab fa-instagram text-2xl text-dim group-hover:text-mid transition-colors"></i>
+        </div>
+        <div class="text-center sm:text-left">
+          <p class="font-heading font-300 text-ink text-xl mb-1">@cinnaswirlbakery</p>
+          <p class="text-dim text-sm leading-relaxed max-w-sm">
+            Follow along for fresh-out-of-the-oven photos, market announcements, and seasonal specials.
+          </p>
+        </div>
+        <span class="sm:ml-auto shrink-0 sec-label text-dim group-hover:text-ink transition-colors flex items-center gap-2">
+          View on Instagram <i class="fas fa-arrow-right text-xs"></i>
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="py-20 bg-page">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div data-anim="scroll-reveal" class="mb-14">
+        <p class="sec-label mb-4">What Customers Say</p>
+        <h2 class="font-heading font-300 text-ink"
+            style="font-size: clamp(2rem, 5vw, 3.25rem);">
+          Honest reviews.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <blockquote data-anim="scroll-reveal">
+          <p class="font-heading font-300 text-ink text-lg leading-relaxed italic mb-5">
+            "I found Cinnaswirl at the Dublin Farmers Market and I haven't stopped talking about it since. The caramel pecan roll was still warm. I drove back the next weekend just for more."
+          </p>
+          <footer class="flex items-center gap-3">
+            <div class="w-8 h-px bg-rule"></div>
+            <cite class="not-italic text-dim text-xs tracking-wide">Amanda M. — Dublin Farmers Market</cite>
+          </footer>
+        </blockquote>
+
+        <blockquote data-anim="scroll-reveal">
+          <p class="font-heading font-300 text-ink text-lg leading-relaxed italic mb-5">
+            "Ordered two dozen cinnamon rolls for our daughter's bridal shower. Every single guest asked where we got them. Three people requested the order info before the party was over."
+          </p>
+          <footer class="flex items-center gap-3">
+            <div class="w-8 h-px bg-rule"></div>
+            <cite class="not-italic text-dim text-xs tracking-wide">Sandra P. — Bridal Shower Order, Powell OH</cite>
+          </footer>
+        </blockquote>
+
+        <blockquote data-anim="scroll-reveal">
+          <p class="font-heading font-300 text-ink text-lg leading-relaxed italic mb-5">
+            "Best cinnamon roll I've ever had, no exaggeration. I'm a baker myself — I can tell when someone uses real butter and good flour. These are the real deal. Worth every penny."
+          </p>
+          <footer class="flex items-center gap-3">
+            <div class="w-8 h-px bg-rule"></div>
+            <cite class="not-italic text-dim text-xs tracking-wide">Tom K. — Columbus Farmers Market Regular</cite>
+          </footer>
+        </blockquote>
+
+        <blockquote data-anim="scroll-reveal">
+          <p class="font-heading font-300 text-ink text-lg leading-relaxed italic mb-5">
+            "Pre-ordered online for pickup at the Powell market — the process was seamless and our box was waiting for us. The lemon blueberry roll tasted like summer."
+          </p>
+          <footer class="flex items-center gap-3">
+            <div class="w-8 h-px bg-rule"></div>
+            <cite class="not-italic text-dim text-xs tracking-wide">Jessica R. — Online Pre-Order, Powell Community Market</cite>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" class="py-20 bg-palt">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Image placeholder — clean, type-led -->
+        <div data-anim="scroll-reveal" class="order-2 lg:order-1">
+          <div class="bg-page border border-rule p-12 flex flex-col justify-between"
+               style="min-height: 28rem;">
+            <span class="font-heading text-7xl font-300 leading-none select-none"
+                  style="color: var(--rule);">CS</span>
+            <div>
+              <p class="font-heading font-300 text-ink text-2xl italic leading-snug mb-4">
+                "A perfect cinnamon roll can make anyone's morning better."
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="text-[10px] tracking-[0.25em] uppercase border border-rule px-3 py-1.5 text-mid">Ohio Licensed Bakery</span>
+                <span class="text-[10px] tracking-[0.25em] uppercase border border-rule px-3 py-1.5 text-mid">Small Family Business</span>
+                <span class="text-[10px] tracking-[0.25em] uppercase border border-rule px-3 py-1.5 text-mid">Real Ingredients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-anim="scroll-reveal" class="order-1 lg:order-2">
+          <p class="sec-label mb-4">Our Story</p>
+          <h2 class="font-heading font-300 text-ink mb-8"
+              style="font-size: clamp(2rem, 5vw, 3.25rem);">
+            About Cinnaswirl
+          </h2>
+          <div class="space-y-5 text-mid text-sm leading-relaxed max-w-lg">
+            <p>
+              Cinnaswirl started with a love of real ingredients and a belief that a perfect cinnamon roll could make anyone's morning better. What began as weekend baking for family and neighbors in Powell quickly turned into something bigger — a small business built on honest recipes and a relentless commitment to quality.
+            </p>
+            <p>
+              Every recipe was developed from scratch in our own kitchen, tested dozens of times, and refined on the honest feedback of our community. We don't use mixes, we don't cut fat, and we don't compromise on ingredients just to protect margins.
+            </p>
+            <p>
+              We show up at Columbus-area farmers markets every weekend because we believe great food belongs in the community that inspired it. When you buy from Cinnaswirl, you're supporting a small family bakery that genuinely cares about what you're eating.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="py-20 bg-page">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div data-anim="scroll-reveal" class="mb-14">
+        <p class="sec-label mb-4">Custom Orders &amp; Questions</p>
+        <h2 class="font-heading font-300 text-ink mb-3"
+            style="font-size: clamp(2rem, 5vw, 3.25rem);">
+          Get In Touch
+        </h2>
+        <p class="text-dim text-sm max-w-md leading-relaxed">For custom event orders, wedding pastries, or any inquiry — fill out the form or reach us directly.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+
+        <!-- Contact info -->
+        <div class="space-y-6">
+
+          <a href="tel:+17408816003" class="flex items-center gap-4 group">
+            <span class="w-10 text-center text-dim group-hover:text-ink transition-colors">
+              <i class="fas fa-phone text-sm"></i>
+            </span>
+            <div>
+              <p class="sec-label mb-0.5">Phone</p>
+              <p class="text-ink font-semibold text-sm group-hover:text-mid transition-colors">(740) 881-6003</p>
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/cinnaswirlbakery" target="_blank" class="flex items-center gap-4 group">
+            <span class="w-10 text-center text-dim group-hover:text-ink transition-colors">
+              <i class="fab fa-facebook text-sm"></i>
+            </span>
+            <div>
+              <p class="sec-label mb-0.5">Facebook</p>
+              <p class="text-ink font-semibold text-sm group-hover:text-mid transition-colors">@cinnaswirlbakery</p>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/cinnaswirlbakery" target="_blank" class="flex items-center gap-4 group">
+            <span class="w-10 text-center text-dim group-hover:text-ink transition-colors">
+              <i class="fab fa-instagram text-sm"></i>
+            </span>
+            <div>
+              <p class="sec-label mb-0.5">Instagram</p>
+              <p class="text-ink font-semibold text-sm group-hover:text-mid transition-colors">@cinnaswirlbakery</p>
+            </div>
+          </a>
+
+          <a href="https://cinnaswirl.square.site" target="_blank" class="flex items-center gap-4 group">
+            <span class="w-10 text-center text-dim group-hover:text-ink transition-colors">
+              <i class="fas fa-shopping-cart text-sm"></i>
+            </span>
+            <div>
+              <p class="sec-label mb-0.5">Online Orders</p>
+              <p class="text-ink font-semibold text-sm group-hover:text-mid transition-colors">cinnaswirl.square.site</p>
+            </div>
+          </a>
+
+          <div class="pt-4 border-t border-rule">
+            <p class="text-dim text-xs leading-relaxed">
+              We respond to custom order inquiries within 24 hours. For urgent requests, call us directly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <h3 class="font-heading text-xl text-ink mb-6">Custom Order Inquiry</h3>
+          <form onsubmit="return handleBakeryForm(event)" class="space-y-4">
+
+            <div>
+              <label for="ct-occasion" class="block sec-label mb-2">Occasion</label>
+              <input type="text" id="ct-occasion" placeholder="Wedding, birthday, corporate event..."
+                     class="field" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="ct-quantity" class="block sec-label mb-2">Quantity</label>
+                <input type="text" id="ct-quantity" placeholder="e.g. 3 dozen" class="field" />
+              </div>
+              <div>
+                <label for="ct-date" class="block sec-label mb-2">Date Needed</label>
+                <input type="date" id="ct-date" class="field" />
+              </div>
+            </div>
+
+            <div>
+              <label for="ct-flavors" class="block sec-label mb-2">Preferred Flavors</label>
+              <input type="text" id="ct-flavors" placeholder="Classic, caramel pecan, lemon blueberry..."
+                     class="field" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="ct-name" class="block sec-label mb-2">Your Name</label>
+                <input type="text" id="ct-name" placeholder="Your Name" class="field" />
+              </div>
+              <div>
+                <label for="ct-phone" class="block sec-label mb-2">Phone Number</label>
+                <input type="tel" id="ct-phone" placeholder="(XXX) XXX-XXXX" class="field" />
+              </div>
+            </div>
+
+            <div>
+              <label for="ct-notes" class="block sec-label mb-2">Additional Notes</label>
+              <textarea id="ct-notes" rows="3"
+                        placeholder="Allergies, dietary restrictions, delivery preferences..."
+                        class="field resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-ink text-palt font-bold py-3.5 text-[11px] tracking-[0.2em] uppercase hover:bg-pdark transition-colors">
+              Submit Custom Order Request
+            </button>
+
+          </form>
+          <div id="bakery-form-success" class="hidden mt-4 border border-rule bg-palt p-4 text-center">
+            <p class="text-ink text-sm font-semibold">Order inquiry received!</p>
+            <p class="text-dim text-xs mt-1">We'll follow up within 24 hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="py-14" style="background-color: var(--ink);">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-circle-notch text-mid opacity-70"></i>
+            <span class="font-heading text-lg" style="color: var(--palt);">Cinnaswirl Bakery</span>
+          </div>
+          <p class="text-xs leading-relaxed mb-5" style="color: rgba(245,240,234,0.4);">
+            Artisan cinnamon rolls and pastries made with real butter — Powell, Ohio's favorite bakery.
+          </p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/cinnaswirlbakery" target="_blank"
+               class="footer-social-btn w-8 h-8 flex items-center justify-center border transition-colors">
+              <i class="fab fa-facebook text-xs"></i>
+            </a>
+            <a href="https://www.instagram.com/cinnaswirlbakery" target="_blank"
+               class="footer-social-btn w-8 h-8 flex items-center justify-center border transition-colors">
+              <i class="fab fa-instagram text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="sec-label mb-5" style="color: rgba(245,240,234,0.3);">Navigate</p>
+          <ul class="space-y-2.5">
+            <li><a href="#menu"     class="text-xs hover:text-palt transition-colors" style="color: rgba(245,240,234,0.55);">Menu</a></li>
+            <li><a href="#order"    class="text-xs hover:text-palt transition-colors" style="color: rgba(245,240,234,0.55);">Order Online</a></li>
+            <li><a href="#schedule" class="text-xs hover:text-palt transition-colors" style="color: rgba(245,240,234,0.55);">Market Schedule</a></li>
+            <li><a href="#about"    class="text-xs hover:text-palt transition-colors" style="color: rgba(245,240,234,0.55);">About</a></li>
+            <li><a href="#contact"  class="text-xs hover:text-palt transition-colors" style="color: rgba(245,240,234,0.55);">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="sec-label mb-5" style="color: rgba(245,240,234,0.3);">Contact</p>
+          <ul class="space-y-2.5">
+            <li><a href="tel:+17408816003" class="text-xs hover:text-palt transition-colors" style="color: rgba(245,240,234,0.55);">(740) 881-6003</a></li>
+            <li><a href="https://cinnaswirl.square.site" target="_blank" class="text-xs hover:text-palt transition-colors" style="color: rgba(245,240,234,0.55);">cinnaswirl.square.site</a></li>
+            <li class="text-xs" style="color: rgba(245,240,234,0.35);">Powell, OH</li>
+          </ul>
+          <div class="mt-6">
+            <a href="https://cinnaswirl.square.site" target="_blank"
+               class="inline-block border text-palt text-[10px] font-bold tracking-[0.2em] uppercase px-5 py-2.5 hover:bg-ruledk transition-colors" style="border-color: var(--ruledk);">
+              Order Now
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-3"
+           style="border-color: var(--ruledk);">
+        <p class="text-[10px] tracking-widest uppercase" style="color: rgba(245,240,234,0.25);">
+          © 2026 Cinnaswirl Bakery — Powell, Ohio
+        </p>
+        <p class="text-[10px]" style="color: rgba(245,240,234,0.2);">Ohio Licensed Cottage Bakery</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <!-- Motion One (inline) -->
+  <!-- motion-one v10.18.0 inline:start -->
+  <script>!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"function"==typeof define&&define.amd?define(["exports"],e):e((t="undefined"!=typeof globalThis?globalThis:t||self).Motion={})}(this,(function(t){"use strict";function e(t,e){-1===t.indexOf(e)&&t.push(e)}function n(t,e){const n=t.indexOf(e);n>-1&&t.splice(n,1)}const i=(t,e,n)=>Math.min(Math.max(n,t),e),r={duration:.3,delay:0,endDelay:0,repeat:0,easing:"ease"},o=t=>"number"==typeof t,s=t=>Array.isArray(t)&&!o(t[0]),a=(t,e,n)=>{const i=e-t;return((n-t)%i+i)%i+t};function c(t,e){return s(t)?t[a(0,t.length,e)]:t}const l=(t,e,n)=>-n*t+n*e+t,u=()=>{},f=t=>t,h=(t,e,n)=>e-t==0?1:(n-t)/(e-t);function d(t,e){const n=t[t.length-1];for(let i=1;i<=e;i++){const r=h(0,e,i);t.push(l(n,1,r))}}function p(t){const e=[0];return d(e,t-1),e}function g(t,e=p(t.length),n=f){const r=t.length,o=r-e.length;return o>0&&d(e,o),o=>{let s=0;for(;s<r-2&&!(o<e[s+1]);s++);let a=i(0,1,h(e[s],e[s+1],o));return a=c(n,s)(a),l(t[s],t[s+1],a)}}const m=t=>Array.isArray(t)&&o(t[0]),y=t=>"object"==typeof t&&Boolean(t.createAnimation),v=t=>"function"==typeof t,w=t=>"string"==typeof t,b={ms:t=>1e3*t,s:t=>t/1e3};function E(t,e){return e?t*(1e3/e):0}const x=(t,e,n)=>(((1-3*n+3*e)*t+(3*n-6*e))*t+3*e)*t,O=1e-7,S=12;function M(t,e,n,i){if(t===e&&n===i)return f;const r=e=>function(t,e,n,i,r){let o,s,a=0;do{s=e+(n-e)/2,o=x(s,i,r)-t,o>0?n=s:e=s}while(Math.abs(o)>O&&++a<S);return s}(e,0,1,t,n);return t=>0===t||1===t?t:x(r(t),e,i)}const T=(t,e="end")=>n=>{const r=(n="end"===e?Math.min(n,.999):Math.max(n,.001))*t,o="end"===e?Math.floor(r):Math.ceil(r);return i(0,1,o/t)},A={ease:M(.25,.1,.25,1),"ease-in":M(.42,0,1,1),"ease-in-out":M(.42,0,.58,1),"ease-out":M(0,0,.58,1)};function D(t){return v(t)?t:w(t)?A[t]||f:m(t)?M(...t):s(t)?g(t):f}const P=new WeakMap;function j(t,e){P.set(t,e)}function R(t){return P.has(t)?P.get(t):window.getComputedStyle(t)}const C={get:(t,e)=>R(t).getPropertyValue(e)};let z;function q(){return z||(z=document.createElement("div"),z.style.cssText="position:absolute;left:-100%;top:-100%",document.body.appendChild(z)),z}const L={};function k(t,e){return L[t]||(L[t]={}),L[t][e]||(L[t][e]=(()=>{const n=q();return n.style[t]=e,R(n)[t]!==e||n.style[t]===e?n.style[t]:e})()),L[t][e]}const H=["","webkit","moz","ms"];let I={};const F=t=>{if(!I[t]){const e=H.findIndex((e=>{const n=e?`${e}${t[0].toUpperCase()}${t.slice(1)}`:t;return void 0!==z?.style[n]&&(I[t]=n),I[t]}));-1===e&&(I[t]=t)}return I[t]};function N(t,e){return F(t)?{[F(t)]:e}:{}}const W=new Map,G=new Set;function K(t,e,n){const i=W.get(t)||{};if(!n&&i[e])return;const r={...i,[e]:!0};W.set(t,r),G.forEach((i=>i(t,e,n)))}function U(t){G.add(t);return()=>G.delete(t)}const V={linear:"linear"};let X;function $(t,e){return X||(X=new Map),X.has(t)||(X.set(t,new Map),t.addEventListener("finish",(()=>{X.get(t)?.clear()}))),X.get(t).set(e,!0),()=>{X.get(t)?.delete(e)}}function Y(t,e){const n=X?.get(t);return Boolean(n?.has(e))}const J=["opacity","clipPath","filter","transform","background-color","backgroundColor"],Q=t=>J.includes(t)?null:q().style[t]===undefined?void 0:t;function Z(t,n,i,{duration:s=.3,delay:a=0,endDelay:c=0,repeat:l=0,offset:u,easing:f="ease",transform:h,onUpdate:d,onComplete:p}={}){const g=e=>{if(void 0!==e){const t=k(n,e);return e!==t?t:void 0}},m=t=>{const e=[];t.forEach((t=>{e.push(...(w(t)&&V[t]?[V[t]]:["",t]))}));return e};let y;const x=Q(n);if(x)y=t.animate({[x]:[...(Array.isArray(i)?i:o(i)||w(i)?[null,i]:[null,...i]).map(g).filter((t=>void 0!==t))]},{duration:1e3*s,delay:1e3*a,endDelay:1e3*c,easing:Array.isArray(f)?m(f):w(f)&&V[f]||f,fill:"both",iterations:l+1,composite:"replace",offset:u});else{const e=(Array.isArray(i)?i:o(i)||w(i)?[null,i]:[null,...i]).reduce(((t,e,n,i)=>{const a=g(e);if(void 0!==a){const e=u?u[n]:n/(i.length-1);t.push({offset:e,value:a})}return t}),[]);if(!e.length)return{finished:Promise.resolve()};y=t.animate(e.map((t=>({[x||n]:t.value,offset:t.offset,...(Array.isArray(f)?{easing:m([c])[n]}:{easing:f})}))),{duration:1e3*s,delay:1e3*a,endDelay:1e3*c,fill:"both",iterations:l+1,composite:"replace"})}y.duration&&(d||p)&&(y.onfinish=p?()=>p():u=>{},d&&y.addEventListener("progress",(()=>d(y.currentTime/y.duration??0))));const O=$(y,n);return{animation:y,duration:s,get finished(){return y.finished.then((()=>{O(),K(t,n)}))}}}function tt(t,n){if(void 0===n||"string"==typeof t)return t;const r=[];for(const t in n){const e=n[t];void 0!==e&&r.push(`${t}: ${e}`)}if(!r.length)return;return r.join(", ")}function et(t,n,i){if(!t.length)return{finished:Promise.resolve()};const s=[],a=[];let c=0,l=0;const u=[];for(const r of t){const t=Z(r.element,r.key,r.value,r.options||{});e(u,t.animation),s.push(t.finished),c=Math.max(c,(r.options?.duration||.3)+(r.options?.delay||0)),l=Math.max(l,r.options?.endDelay||0)}return n&&(a.push(Promise.all(s).then(n)),u.forEach((t=>j(t,!0)))),{animations:u,finished:Promise.all([...s,...a])}}function nt(t,n){return e=>{const r=[];for(const n of t){const t=[];for(const e in n){const i=n[e];Array.isArray(i)&&(t.push({element:n.element,key:e,value:i,options:n.options}),delete n[e]),n.element&&0===t.length&&(r.push(n.element),t.push({element:n.element,key:"opacity",value:[1,1],options:{...n.options,duration:.001}}))}r.push(...t.map((t=>t.element)))}return et(r,n,0).finished}}function it(t){return t.target}function rt(t,n){const i="string"==typeof t?document.querySelectorAll(t):t;if(!i||!i.length)return[];const r="length"in i?[...i]:i;return Array.isArray(n)?r.map(((t,e)=>{const i=Array.isArray(n[e])?n[e]:n;return i.map((n=>it({target:t,value:n})))})).flat():r.map((t=>it({target:t,value:n})))}function ot(t){return null!=t}function st(t,e,n,i={}){const{delay:r=0,duration:a=.3,easing:c="ease",offset:l,onComplete:u,onUpdate:f}=i;if(!e.length)return t.map((()=>({finished:Promise.resolve()})));const h=i.defaultOptions||{};let d=[],p=[];const g=[];let m=0,y=0;for(let n=0;n<t.length;n++){const i=t[n],c=e[n],l=[];for(const t in c){const n=c[t];if("element"!==t&&n){const s=Z(i,t,n,{...h,delay:0,duration:a,easing:"ease"});l.push(s.finished),g.push(s.animation),m=Math.max(m,(h.duration||.3)),y=Math.max(y,h.endDelay||0)}}d.push(Promise.all(l)),p.push(Promise.all(l))}const x=[];return u&&x.push(Promise.all(d).then(u)),g.forEach((t=>j(t,!0))),t.map(((t,e)=>({finished:Promise.all([d[e],...x])})))}const at=t=>"string"==typeof t||"function"==typeof t,ct=t=>"opacity"===t||t.startsWith("--"),lt=new WeakMap;function ut(t){return lt.has(t)?lt.get(t):{}}function ft(t,n,i={}){const{duration:r=.3,delay:a=0,easing:c="ease",offset:l,transform:u,allowWebkitAcceleration:f=!1,onComplete:h,onUpdate:d}=i;t instanceof Element&&null===t.parentNode&&document.body.appendChild(t);const p=Array.isArray(n)?n:[n],g={keyframes:p.map((t=>{const e={};for(const n in t)"element"===n||"offset"===n||(e[F(n)]=t[n]);return e})),options:{duration:r,delay:a,easing:ct(c)?c:String(M(...Array.isArray(c)?c:[.42,0,.58,1])),fill:"both"}};if("string"==typeof g.options.easing&&-1!==g.options.easing.indexOf("cubic-bezier"))try{const t=new Animation(new KeyframeEffect(t,g.keyframes,g.options));t.play(),lt.set(t,{...ut(t)}),h&&(t.onfinish=()=>h()),t.commitStyles()}catch(t){}else t instanceof Element&&t.animate&&(()=>{const n=t.animate(g.keyframes,g.options);lt.set(n,{...ut(n)});const i=$(n,"transform");h&&(n.onfinish=()=>{i(),K(t,"transform"),h()});d&&n.addEventListener("progress",(()=>d(n.currentTime/n.effect?.getComputedTiming().duration??0)))})()}const ht="transition",dt=new Map;function pt(t,e){dt.has(t)||dt.set(t,{});const n=dt.get(t);for(const t in e){const i=n[t]||[];i.push(e[t]),n[t]=i}return()=>{for(const e in n){const i=n[e];i.pop(),0===i.length&&(delete n[e],0===Object.keys(n).length&&dt.delete(t))}}}function gt(t,n={}){const{delay:i=0,duration:s=.3,easing:a="ease"}=n;return t.reduce(((t,n,r,c)=>{const l=[...n];if(!l.length)return t;const u=c.length,h=Math.floor(r/u),d=n.length>1?n[0]:void 0,p=n[n.length-1];return t.push({element:l[u-1-h],key:"opacity",value:[l[0]||0,l[1]||1],options:{delay:i,duration:s,easing:a}}),t}),[]).filter(ot)}const mt=new WeakMap;function yt(t,n,i,r){const s=t||function(t){return t}(document.documentElement);let a;const c=r||{};a=new IntersectionObserver((r=>{r.forEach((r=>{if(r.isIntersecting){a.unobserve(r.target),n(r.target);const s=i?{...c,...i(r.target)}:c;t?et([{element:r.target,key:"opacity",value:[0,1],options:{...s,duration:s.duration||.3}}]).finished:Promise.resolve()}}))}),{root:s,rootMargin:c.margin,threshold:c.threshold});return s.querySelectorAll("[data-anim]").forEach((t=>a.observe(t))),()=>a.disconnect()}function vt(t,n={}){const{duration:i=.3,easing:r="ease",delay:a=0,stagger:c=0}=n;const l=Array.isArray(t)?t:[...document.querySelectorAll(t)];const u=[];for(const t of l)u.push({element:t,opacity:[0,1],...Object.fromEntries(Object.entries({translateY:[20,0],translateX:[0,0],scale:[1,1]}).filter((([n,e])=>{const i=t.getAttribute(`data-anim`);return!i||i.includes(n)||"scroll-reveal"===i})))});return st(l,u.map(((t,n)=>({...u[n],opacity:[0,1],duration:i,delay:a+n*c,easing:r}))),{})}function wt(t){return t instanceof Element?[t]:t instanceof NodeList?[...t]:[...document.querySelectorAll(t)]}function bt(t,n={},i={}){const{delay:r=0,duration:a=.3,easing:c="ease",stagger:l=0}=i;const u=wt(t);return{finished:Promise.all(u.map(((t,e)=>{const n={};for(const r of Object.keys(n))n[r]=n[r];return ft(t,Object.keys(n).length?[n]:[{opacity:[0,1]}],{delay:r+e*l,duration:a,easing:c}),Promise.resolve()})))}}function Et(){if(!document.body)return;document.documentElement.classList.add("js-motion-ready");const t=document.querySelectorAll("[data-anim]");const n=new IntersectionObserver((t=>{t.forEach((t=>{if(t.isIntersecting){const e=t.target,i=e.getAttribute("data-anim"),r=parseFloat(e.getAttribute("data-anim-delay")||"0");const s={duration:.6,easing:[.25,.1,.25,1],delay:r};if("scroll-reveal"===i)Z(e,"opacity",[0,1],s),Z(e,"transform",["translateY(20px)","translateY(0px)"],s);else if("hero-fade"===i)Z(e,"opacity",[0,1],{...s,duration:.8});else if("hero-rise"===i)Z(e,"opacity",[0,1],{...s,duration:.7,delay:r+.1}),Z(e,"transform",["translateY(24px)","translateY(0px)"],{...s,duration:.7,delay:r+.1});n.unobserve(e)}}))]}),{threshold:.15});t.forEach((t=>n.observe(t)))}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",Et):Et();t.animate=function(t,n,e){return"string"==typeof t||t instanceof Element?Z(t,n,e,{}):et(t,void 0,0)},t.animateList=vt,t.animatePresence=gt,t.createMotionState=bt,t.inView=yt,t.spring=function(t={}){const{stiffness:e=100,damping:n=10,mass:i=1,from:r=0,to:s=1,velocity:a=0,restSpeed:c=.01,restDelta:l=.01}=t;const u=Math.sqrt(4*e*i);const f=n>=u;return o=>{let h,d;const p=s-r,g=a/1e3;if(f){const t=(n/(2*i)),e=Math.sqrt(Math.max(0,n*n-4*i*e))/(2*i);h=t=>(r+p)+(g+p*t)*t*Math.exp(-t*t);d=t=>-t*(r+p)+(g+p*(1-t*t))*Math.exp(-t*t)}else{const t=Math.sqrt(e*i-n*n/4)/i,s=n/(2*i);h=t=>r+p*(1-Math.exp(-s*t)*(Math.cos(t*t)+s/t*Math.sin(t*t)));d=t=>p*Math.exp(-s*t)*(s*Math.cos(t*t)-(s*s/t-t)*Math.sin(t*t))}const m=1/60;let y=0;for(let t=0;t<2e3;t++){if(y+=m,Math.abs(d(y))<c&&Math.abs(h(y)-s)<l)return s}return h(o*y)}},t.stagger=function(t=.1,{start:e=0,from:n="first",easing:i}={}){return(r,s,a)=>{let c;const l=a.length;if("first"===n)c=0;else if("last"===n)c=l-1;else if("center"===n)c=l/2-.5;else if("number"==typeof n)c=n;else{const t=s;c=t}let u=Math.abs(c-r)*t;if(i){const t=D(i);u=t(r/(l-1))*l*t}return e+u}},Object.defineProperty(t,"__esModule",{value:!0})}))</script>
+  <!-- motion-one v10.18.0 inline:end -->
+
+  <script>
+    function switchMenuTab(tab) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('menu-' + tab).classList.add('active');
+      document.getElementById('menu-btn-' + tab).classList.add('active');
+    }
+
+    function handleBakeryForm(e) {
+      e.preventDefault();
+      document.getElementById('bakery-form-success').classList.remove('hidden');
+      e.target.reset();
+      return false;
+    }
+
+    // Mobile nav toggle
+    document.getElementById('nav-toggle')?.addEventListener('change', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.style.display = this.checked ? 'block' : 'none';
+    });
+  </script>
+
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous"></script>
+  <script>
+    const lenis = new Lenis({ syncTouch: true });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var id = this.getAttribute('href');
+        var target = id.length > 1 && document.querySelector(id);
+        if (target) { e.preventDefault(); lenis.scrollTo(target, { offset: -56 }); }
+      });
+    });
+  </script>
+
+</body>
+</html>

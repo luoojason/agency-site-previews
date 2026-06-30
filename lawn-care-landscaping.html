@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lawn Care Landscaping LLC — Columbus, OH</title>
+  <meta name="description" content="Columbus, OH lawn care and hardscape specialists. Mowing, edging, fertilization, paver patios, retaining walls, fire pits. Licensed & insured since 2019." />
+  <link rel="canonical" href="https://lawncarelandscapingllc.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lawn Care Landscaping LLC">
+  <meta property="og:title" content="Lawn Care Landscaping LLC — Columbus, OH | Mowing, Hardscape &amp; More">
+  <meta property="og:description" content="Columbus, OH lawn care and hardscape specialists. Mowing, edging, fertilization, paver patios, retaining walls, fire pits. Licensed &amp; insured since 2019.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lawn Care Landscaping LLC — Columbus, OH">
+  <meta name="twitter:description" content="Columbus lawn care &amp; hardscape specialists. Mowing, paver patios, retaining walls, fire pits. Licensed &amp; insured since 2019.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LandscapeService",
+  "name": "Lawn Care Landscaping LLC",
+  "description": "Columbus, OH lawn care and hardscape specialists. Mowing, edging, fertilization, paver patios, retaining walls, and fire pits. Licensed and insured since 2019.",
+  "url": "https://lawncarelandscapingllc.com/",
+  "telephone": "(614) 285-4700",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Columbus",
+    "addressRegion": "OH",
+    "addressCountry": "US"
+  },
+  "priceRange": "$$"
+}
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            page:   '#F4F2EA',
+            palt:   '#FBFAF4',
+            pdark:  '#0C120E',
+            ink:    '#141E16',
+            mid:    '#3A5040',
+            dim:    '#6A8470',
+            ghost:  '#A8C0AC',
+            accent: '#208030',
+            rule:   '#CCD8C8',
+            ruledk: '#1A2818',
+          },
+          fontFamily: {
+            display: ['Anton', 'sans-serif'],
+            body:    ['Barlow', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --page: #F4F2EA; --palt: #FBFAF4; --pdark: #0C120E;
+      --ink: #141E16; --mid: #3A5040; --dim: #6A8470;
+      --accent: #208030;
+      --rule: #CCD8C8; --ruledk: #1A2818;
+      --palt-rgb: 251,250,244;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { }
+    body { font-family: 'Barlow', sans-serif; background: #F4F2EA; color: #141E16; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4, h5 { font-family: 'Anton', sans-serif; letter-spacing: 0.02em; }
+
+    .sec-label {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    /* ── Nav ── */
+    #main-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--palt);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ── Section rule ── */
+    .section-rule {
+      display: block;
+      width: 56px; height: 2px;
+      background: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Portfolio grid ── */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px;
+      background: var(--rule);
+    }
+    .portfolio-item { position: relative; overflow: hidden; }
+    .portfolio-item:nth-child(1) { grid-row: span 2; }
+    .portfolio-item:nth-child(5) { grid-row: span 2; }
+
+    .portfolio-item img {
+      display: block;
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .portfolio-item:nth-child(1) img,
+    .portfolio-item:nth-child(5) img {
+      height: 100%;
+      min-height: 480px;
+    }
+
+    .portfolio-label {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: var(--pdark);
+      color: var(--palt); font-family: 'Barlow', sans-serif;
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+    }
+    .portfolio-badge {
+      position: absolute; top: 12px; right: 12px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em;
+      padding: 3px 8px;
+      text-transform: uppercase;
+    }
+    .badge-after  { background: var(--ink); color: var(--palt); }
+
+    /* ── Testimonials ── */
+    .testimonial-card {
+      background: var(--palt);
+      border: 1px solid var(--rule);
+      padding: 28px;
+    }
+
+    /* ── Promo banner ── */
+    .promo-banner {
+      background: var(--ink);
+    }
+
+    /* ── Form ── */
+    .form-field {
+      width: 100%; padding: 12px 16px;
+      background: var(--palt);
+      border: 1px solid var(--rule);
+      font-family: 'Barlow', sans-serif;
+      font-size: 1rem; color: var(--ink);
+      transition: border-color 0.15s;
+    }
+    .form-field:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .form-field::placeholder { color: var(--dim); }
+    .form-label {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--dim); display: block; margin-bottom: 6px;
+    }
+
+    /* ── Animations (CSS-only, no new scripts) ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-anim-1 { animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+    .hero-anim-2 { animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+    .hero-anim-3 { animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.40s both; }
+    .hero-anim-4 { animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both; }
+
+    .btn-primary {
+      background: var(--ink);
+      color: var(--palt);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700; font-size: 0.75rem; letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: opacity 0.15s;
+      border: none; cursor: pointer; text-decoration: none;
+    }
+    .btn-primary:hover { opacity: 0.8; }
+    .btn-submit-accent {
+      background: var(--accent) !important;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: rgba(var(--palt-rgb),0.5);
+      border: 1px solid rgba(var(--palt-rgb),0.22);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 500; font-size: 0.75rem; letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: border-color 0.15s, color 0.15s;
+      text-decoration: none;
+    }
+    .btn-outline:hover { border-color: rgba(var(--palt-rgb),0.45); color: rgba(var(--palt-rgb),0.85); }
+
+    .nav-link {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none; transition: color 0.15s;
+    }
+    .nav-link:hover { color: var(--ink); }
+
+    /* Service split */
+    .service-half-left  { background: var(--pdark); }
+    .service-half-right { background: var(--ink); }
+    .service-row {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(var(--palt-rgb),0.10);
+    }
+    .service-row:last-child { border-bottom: none; }
+
+    /* Mobile nav */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+
+    @media (max-width: 768px) {
+      .portfolio-item:nth-child(1),
+      .portfolio-item:nth-child(5) { grid-row: span 1; }
+      .portfolio-item:nth-child(1) img,
+      .portfolio-item:nth-child(5) img { min-height: 240px; }
+    }
+
+    /* About badges */
+    .about-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--palt);
+      border: 1px solid var(--rule);
+      padding: 12px 20px;
+    }
+
+    /* Contact info */
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 16px 0; border-bottom: 1px solid var(--rule);
+    }
+    .contact-item:last-child { border-bottom: none; }
+    .contact-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--rule);
+      color: var(--dim); font-size: 0.9rem;
+    }
+
+    /* Service area pills */
+    .area-pill {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600; font-size: 0.85rem; letter-spacing: 0.06em;
+      background: rgba(var(--palt-rgb),0.08);
+      border: 1px solid rgba(var(--palt-rgb),0.15);
+      color: rgba(var(--palt-rgb),0.65);
+      padding: 6px 16px;
+      display: inline-block;
+    }
+
+    *:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-[200] focus:bg-pdark focus:text-palt focus:px-4 focus:py-3 focus:text-sm focus:font-semibold">Skip to main content</a>
+
+<!-- ═══════════════════════════════════════════
+     STICKY NAV
+═══════════════════════════════════════════ -->
+<nav id="main-nav" aria-label="Main navigation">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;">
+
+    <!-- Logo -->
+    <a href="#" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <span style="width:32px;height:32px;background:var(--ink);display:flex;align-items:center;justify-content:center;color:var(--palt);font-size:1rem;">
+        <i class="fa-solid fa-leaf"></i>
+      </span>
+      <span style="font-family:'Barlow',sans-serif;font-weight:700;font-size:0.95rem;letter-spacing:0.04em;color:var(--ink);line-height:1.2;">
+        Lawn Care<br><span style="color:var(--mid);">Landscaping LLC</span>
+      </span>
+    </a>
+
+    <!-- Desktop links -->
+    <div style="display:flex;align-items:center;gap:28px;" class="hidden md:flex">
+      <a href="#lawn-care" class="nav-link">Lawn Care</a>
+      <a href="#hardscape" class="nav-link">Hardscape</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#quote" class="btn-primary" style="padding:10px 20px;font-size:0.65rem;">
+        Free Quote
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="nav-toggle" aria-label="Open menu" style="display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;" class="md:hidden">
+      <span style="width:24px;height:1.5px;background:var(--ink);display:block;"></span>
+      <span style="width:24px;height:1.5px;background:var(--ink);display:block;"></span>
+      <span style="width:24px;height:1.5px;background:var(--ink);display:block;"></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" style="background:var(--palt);border-top:1px solid var(--rule);padding:20px 24px;display:flex;flex-direction:column;gap:16px;">
+    <a href="#lawn-care" class="nav-link" onclick="document.getElementById('mobile-menu').classList.remove('open')">Lawn Care</a>
+    <a href="#hardscape" class="nav-link" onclick="document.getElementById('mobile-menu').classList.remove('open')">Hardscape</a>
+    <a href="#portfolio" class="nav-link" onclick="document.getElementById('mobile-menu').classList.remove('open')">Portfolio</a>
+    <a href="#contact" class="nav-link" onclick="document.getElementById('mobile-menu').classList.remove('open')">Contact</a>
+    <a href="#quote" class="btn-primary" style="padding:12px 20px;justify-content:center;" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+      Get Free Quote
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+  <!-- HERO -->
+  <section id="home" class="relative min-h-screen flex overflow-hidden" style="background-color: var(--pdark);">
+    <div class="relative z-10 flex flex-col justify-center w-full lg:w-[52%] px-8 lg:px-16 xl:px-24 pt-20 pb-24">
+      <p class="sec-label mb-8 hero-anim-1" style="color: rgba(var(--palt-rgb),0.35);">Columbus, OH &nbsp;·&nbsp; Licensed &amp; Insured &nbsp;·&nbsp; Since 2019</p>
+      <h1 class="font-display leading-[0.88] tracking-tight mb-8 hero-anim-2" style="font-size: clamp(4rem, 10vw, 9rem);">
+        <span class="block" style="color: var(--palt);">WE CUT</span>
+        <span class="block" style="color: var(--palt);">THE GRASS</span>
+        <span class="block" style="color: var(--accent);">LIKE IT'S OURS.</span>
+      </h1>
+      <p class="text-base leading-relaxed mb-10 max-w-sm hero-anim-3" style="color: rgba(var(--palt-rgb),0.5);">Columbus lawn care &amp; hardscape specialists. Mowing, paver patios, retaining walls, fire pits. Licensed &amp; insured.</p>
+      <div class="flex flex-wrap gap-3 hero-anim-4">
+        <a href="#quote" class="inline-block font-bold text-[11px] tracking-[0.2em] uppercase px-7 py-3.5 hover:opacity-80 transition-opacity" style="background: var(--ink); color: var(--palt);">Get Free Quote</a>
+        <a href="#portfolio" class="inline-block font-medium text-[11px] tracking-[0.2em] uppercase px-7 py-3.5" style="border: 1px solid rgba(var(--palt-rgb),0.22); color: rgba(var(--palt-rgb),0.5);">Our Work</a>
+      </div>
+      <div class="absolute bottom-8 left-8 lg:left-16 xl:left-24 sec-label" style="color: rgba(var(--palt-rgb),0.18);">Scroll</div>
+    </div>
+    <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-[48%]">
+      <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&auto=format&fit=crop&q=85" alt="Lawn Care Landscaping LLC Columbus OH" class="w-full h-full object-cover" loading="eager" />
+      <div class="absolute inset-0" style="background: linear-gradient(to right, var(--pdark) 0%, transparent 25%);"></div>
+    </div>
+    <div class="lg:hidden absolute bottom-0 left-0 right-0 h-40 overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&auto=format&fit=crop&q=80" alt="Lawn care" class="w-full h-full object-cover" loading="eager" />
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, var(--pdark) 0%, transparent 50%);"></div>
+    </div>
+  </section>
+
+<!-- ═══════════════════════════════════════════
+     SEASONAL PROMO BANNER
+═══════════════════════════════════════════ -->
+<div class="promo-banner" style="padding:16px 24px;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <i class="fa-solid fa-seedling" style="color:rgba(var(--palt-rgb),0.45);font-size:1.2rem;"></i>
+      <div>
+        <span style="font-family:'Barlow',sans-serif;font-weight:700;font-size:1rem;letter-spacing:0.06em;color:var(--palt);text-transform:uppercase;">
+          Spring Cleanups Booking Now
+        </span>
+        <span style="font-family:'Barlow',sans-serif;font-size:0.85rem;color:rgba(var(--palt-rgb),0.55);display:block;">
+          Limited slots available — don't wait until your yard is overgrown.
+        </span>
+      </div>
+    </div>
+    <a href="#quote" style="background:rgba(var(--palt-rgb),0.10);border:1px solid rgba(var(--palt-rgb),0.25);color:var(--palt);font-family:'Barlow',sans-serif;font-weight:700;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;padding:10px 22px;text-decoration:none;white-space:nowrap;transition:background 0.15s;" onmouseover="this.style.background='rgba(var(--palt-rgb),0.18)'" onmouseout="this.style.background='rgba(var(--palt-rgb),0.10)'">
+      Book Spring Cleanup <i class="fa-solid fa-arrow-right" style="margin-left:6px;"></i>
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     WHY WE'RE DIFFERENT — NUMBERED EDITORIAL
+═══════════════════════════════════════════ -->
+<section id="main-content" style="padding:clamp(56px,8vw,88px) 24px;background:var(--page);">
+  <div style="max-width:1100px;margin:0 auto;">
+
+    <div style="margin-bottom:3.5rem;">
+      <p class="sec-label" style="margin-bottom:1rem;">The Lawn Care Difference</p>
+      <h2 style="font-size:clamp(2rem,5vw,3.25rem);color:var(--ink);margin:0;line-height:1.05;">
+        Why Columbus chooses us.
+      </h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule);" class="md:grid-cols-3">
+
+      <div style="padding:2rem 2.5rem 2rem 0;border-right:1px solid var(--rule);">
+        <span style="font-family:'Anton',sans-serif;font-size:3.5rem;line-height:1;color:var(--rule);display:block;margin-bottom:1.25rem;user-select:none;">01</span>
+        <h3 style="font-size:1.15rem;color:var(--ink);margin:0 0 0.75rem;">Ohio HIC License #HIC.0601487</h3>
+        <p style="font-family:'Barlow',sans-serif;font-size:0.875rem;color:var(--dim);line-height:1.65;margin:0;max-width:28ch;">
+          Licensed contractor with the Ohio Construction Industry Licensing Board. General liability and workers' comp through Westfield Insurance — certificate available on request.
+        </p>
+      </div>
+
+      <div style="padding:2rem 2.5rem;border-right:1px solid var(--rule);">
+        <span style="font-family:'Anton',sans-serif;font-size:3.5rem;line-height:1;color:var(--rule);display:block;margin-bottom:1.25rem;user-select:none;">02</span>
+        <h3 style="font-size:1.15rem;color:var(--ink);margin:0 0 0.75rem;">Owner on Every Job</h3>
+        <p style="font-family:'Barlow',sans-serif;font-size:0.875rem;color:var(--dim);line-height:1.65;margin:0;max-width:28ch;">
+          Marcus, the founder, walks every new property before the crew starts. "We don't send a foreman and hope for the best — I want to see what we're working with myself."
+        </p>
+      </div>
+
+      <div style="padding:2rem 0 2rem 2.5rem;">
+        <span style="font-family:'Anton',sans-serif;font-size:3.5rem;line-height:1;color:var(--rule);display:block;margin-bottom:1.25rem;user-select:none;">03</span>
+        <h3 style="font-size:1.15rem;color:var(--ink);margin:0 0 0.75rem;">Quote Back by End of Business</h3>
+        <p style="font-family:'Barlow',sans-serif;font-size:0.875rem;color:var(--dim);line-height:1.65;margin:0;max-width:28ch;">
+          Submit a request before 3 PM and we commit to a quoted price — not a "call us back" — by 5 PM the same business day. If we miss it, the first mow is on us.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SERVICES — SPLIT LAYOUT
+═══════════════════════════════════════════ -->
+<section id="services-split" style="display:grid;grid-template-columns:1fr 1fr;">
+  <span id="lawn-care" aria-hidden="true" style="position:absolute;"></span>
+
+  <!-- LEFT: Lawn Care -->
+  <div class="service-half-left" id="services-lawn" style="padding:clamp(48px,8vw,80px) clamp(24px,5vw,64px);">
+    <span class="section-rule"></span>
+    <h2 style="font-size:clamp(2rem,4vw,2.8rem);text-transform:uppercase;color:var(--palt);margin:0 0 8px;">
+      Lawn Care<br>Services
+    </h2>
+    <p style="font-family:'Barlow',sans-serif;font-size:0.95rem;color:rgba(var(--palt-rgb),0.45);margin:0 0 32px;max-width:42ch;line-height:1.65;">
+      Your lawn is the first thing neighbors see. We keep it sharp, healthy, and green — every visit.
+    </p>
+
+    <div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">01</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Mowing &amp; Edging</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $45 / visit</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Crisp lines and even cuts, every time. We edge walks, drives, and beds.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">02</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Fertilization &amp; Weed Control</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $89 / treatment</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Season-long programs that crowd out weeds and build dense, resilient turf.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">03</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Aeration &amp; Overseeding</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $129 / service</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Break up compaction, let roots breathe, and thicken thin spots.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">04</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Spring / Fall Cleanup</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $149 / visit</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Full debris removal, trimming, and bed cleanup at season transitions.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">05</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Leaf Removal</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $99 / visit</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Complete fall leaf collection so your turf stays protected all winter.</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#quote" class="btn-primary" style="margin-top:32px;background:rgba(var(--palt-rgb),0.10);border:1px solid rgba(var(--palt-rgb),0.22);">
+      Quote Lawn Service <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <!-- RIGHT: Hardscape -->
+  <div class="service-half-right" id="hardscape" style="padding:clamp(48px,8vw,80px) clamp(24px,5vw,64px);">
+    <span class="section-rule"></span>
+    <h2 style="font-size:clamp(2rem,4vw,2.8rem);text-transform:uppercase;color:var(--palt);margin:0 0 8px;">
+      Hardscape<br>Services
+    </h2>
+    <p style="font-family:'Barlow',sans-serif;font-size:0.95rem;color:rgba(var(--palt-rgb),0.45);margin:0 0 32px;max-width:42ch;line-height:1.65;">
+      Stone, brick, and mortar built to last. We turn unused yard into spaces you'll actually use.
+    </p>
+
+    <div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">01</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Paver Patio Installation</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $2,400 installed</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Custom-fitted paver patios designed to complement your home and maximize space.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">02</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Retaining Walls</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $1,800 installed</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Engineered walls that hold back slopes while adding visual structure to your yard.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">03</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Custom Walkways</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $1,200 installed</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Flagstone, paver, or natural stone paths laid level and built to last decades.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">04</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Garden Borders</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $349 installed</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Clean, defined borders that separate lawn from beds and eliminate edge creep.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <span style="font-family:'Anton',sans-serif;font-size:2rem;line-height:1;color:rgba(var(--palt-rgb),0.12);flex-shrink:0;width:2.6rem;text-align:right;user-select:none;">05</span>
+        <div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--palt);margin:0 0 2px;">Fire Pit Installation</h3>
+          <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">From $1,600 installed</div>
+          <div style="font-size:0.875rem;color:rgba(var(--palt-rgb),0.45);line-height:1.6;">Custom built-in fire pits in natural stone or brick — the centerpiece of any backyard.</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#quote" class="btn-primary" style="margin-top:32px;background:rgba(var(--palt-rgb),0.10);border:1px solid rgba(var(--palt-rgb),0.22);">
+      Quote Hardscape Project <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PORTFOLIO
+═══════════════════════════════════════════ -->
+<section id="portfolio" style="background:var(--palt);padding:clamp(56px,9vw,100px) 24px;">
+  <div style="max-width:1200px;margin:0 auto;">
+
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:40px;">
+      <div>
+        <p class="sec-label" style="margin-bottom:1rem;">Selected Projects</p>
+        <h2 style="font-size:clamp(2rem,5vw,3.2rem);color:var(--ink);margin:0;">
+          Our Work
+        </h2>
+        <p style="font-family:'Barlow',sans-serif;font-size:0.95rem;color:var(--dim);margin:8px 0 0;max-width:52ch;line-height:1.65;">
+          Every project we complete is one more Columbus yard transformed. See what we build.
+        </p>
+      </div>
+      <a href="#quote" class="btn-primary" style="font-size:0.65rem;padding:12px 22px;">
+        Start Your Project
+      </a>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=85" alt="Paver patio installation East Columbus" class="w-full h-full object-cover" style="display:block;width:100%;height:100%;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Paver Patio — East Columbus</div>
+        <div class="portfolio-badge badge-after">After</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&auto=format&fit=crop&q=85" alt="Retaining wall Gahanna OH" class="w-full h-full object-cover" style="display:block;width:100%;height:240px;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Retaining Wall — Gahanna</div>
+        <div class="portfolio-badge badge-after">After</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&auto=format&fit=crop&q=85" alt="Weekly lawn maintenance New Albany OH" class="w-full h-full object-cover" style="display:block;width:100%;height:240px;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Weekly Maintenance — New Albany</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop&q=85" alt="Custom stone walkway Westerville OH" class="w-full h-full object-cover" style="display:block;width:100%;height:240px;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Custom Walkway — Westerville</div>
+        <div class="portfolio-badge badge-after">After</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&auto=format&fit=crop&q=85" alt="Fire pit installation Dublin OH" class="w-full h-full object-cover" style="display:block;width:100%;height:100%;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Fire Pit Installation — Dublin</div>
+        <div class="portfolio-badge badge-after">After</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&auto=format&fit=crop&q=85" alt="Lawn aeration and overseeding Reynoldsburg" class="w-full h-full object-cover" style="display:block;width:100%;height:240px;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Spring Cleanup — Reynoldsburg</div>
+        <div class="portfolio-badge badge-after">After</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&auto=format&fit=crop&q=85" alt="Landscape bed design Westerville OH" class="w-full h-full object-cover" style="display:block;width:100%;height:240px;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Landscape Beds — Westerville</div>
+        <div class="portfolio-badge badge-after">After</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=800&auto=format&fit=crop&q=85" alt="Garden border and cleanup Gahanna OH" class="w-full h-full object-cover" style="display:block;width:100%;height:240px;object-fit:cover;" loading="lazy" />
+        <div class="portfolio-label">Garden Border &amp; Cleanup — Gahanna</div>
+        <div class="portfolio-badge badge-after">After</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FREE QUOTE FORM
+═══════════════════════════════════════════ -->
+<section id="quote" style="background:var(--pdark);padding:clamp(56px,9vw,100px) 24px;">
+  <div style="max-width:800px;margin:0 auto;">
+
+    <p class="sec-label" style="color:rgba(var(--palt-rgb),0.3);margin-bottom:1rem;">Free Estimate</p>
+    <h2 style="font-size:clamp(2rem,5vw,3rem);color:var(--palt);margin:0 0 8px;">
+      Get Your Free Quote
+    </h2>
+    <p style="font-family:'Barlow',sans-serif;font-size:1rem;color:rgba(var(--palt-rgb),0.45);margin:0 0 36px;line-height:1.65;">
+      Tell us about your property and project. We respond within 24 hours — usually same day.
+    </p>
+
+    <form style="display:grid;grid-template-columns:1fr 1fr;gap:20px;" onsubmit="handleQuoteSubmit(event)">
+
+      <div>
+        <label class="form-label" style="color:rgba(var(--palt-rgb),0.4);" for="q-name">Full Name</label>
+        <input class="form-field" type="text" id="q-name" name="name" placeholder="John Smith" required
+          style="background:rgba(var(--palt-rgb),0.05);border-color:var(--ruledk);color:var(--palt);"
+          onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--ruledk)'" />
+      </div>
+
+      <div>
+        <label class="form-label" style="color:rgba(var(--palt-rgb),0.4);" for="q-phone">Phone Number</label>
+        <input class="form-field" type="tel" id="q-phone" name="phone" placeholder="Your phone number" required
+          style="background:rgba(var(--palt-rgb),0.05);border-color:var(--ruledk);color:var(--palt);"
+          onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--ruledk)'" />
+      </div>
+
+      <div style="grid-column:1/-1;">
+        <label class="form-label" style="color:rgba(var(--palt-rgb),0.4);" for="q-email">Email Address</label>
+        <input class="form-field" type="email" id="q-email" name="email" placeholder="john@example.com"
+          style="background:rgba(var(--palt-rgb),0.05);border-color:var(--ruledk);color:var(--palt);"
+          onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--ruledk)'" />
+      </div>
+
+      <div>
+        <label class="form-label" style="color:rgba(var(--palt-rgb),0.4);" for="q-service">Service Type</label>
+        <select class="form-field" id="q-service" name="service" required
+          style="background:rgba(var(--palt-rgb),0.05);border-color:var(--ruledk);color:var(--palt);appearance:none;cursor:pointer;">
+          <option value="" disabled selected>Select a service...</option>
+          <option value="lawn">Lawn Care</option>
+          <option value="hardscape">Hardscape</option>
+          <option value="both">Both Lawn &amp; Hardscape</option>
+          <option value="cleanup">Spring/Fall Cleanup</option>
+          <option value="other">Other / Not Sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="form-label" style="color:rgba(var(--palt-rgb),0.4);" for="q-size">Property Size</label>
+        <select class="form-field" id="q-size" name="size"
+          style="background:rgba(var(--palt-rgb),0.05);border-color:var(--ruledk);color:var(--palt);appearance:none;cursor:pointer;">
+          <option value="" disabled selected>Approximate size...</option>
+          <option value="small">Under 5,000 sq ft</option>
+          <option value="medium">5,000–10,000 sq ft</option>
+          <option value="large">10,000–20,000 sq ft</option>
+          <option value="xl">Over 20,000 sq ft</option>
+          <option value="unsure">Not Sure</option>
+        </select>
+      </div>
+
+      <div style="grid-column:1/-1;">
+        <label class="form-label" style="color:rgba(var(--palt-rgb),0.4);" for="q-notes">Project Description &amp; Timeline</label>
+        <textarea class="form-field" id="q-notes" name="notes" rows="4"
+          placeholder="Tell us what you're looking to do and when you'd like to get started..."
+          style="background:rgba(var(--palt-rgb),0.05);border-color:var(--ruledk);color:var(--palt);resize:vertical;min-height:100px;"
+          onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--ruledk)'"></textarea>
+      </div>
+
+      <div style="grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Barlow',sans-serif;font-size:0.85rem;font-weight:500;letter-spacing:0.04em;color:rgba(var(--palt-rgb),0.4);">
+          <i class="fa-solid fa-clock" style="color:rgba(var(--palt-rgb),0.4);margin-right:6px;"></i>
+          We respond within 24 hours. Usually same day.
+        </span>
+        <button type="submit" class="btn-primary btn-submit-accent" style="font-size:0.75rem;padding:14px 32px;">
+          <i class="fa-solid fa-paper-plane"></i> Request Free Quote
+        </button>
+      </div>
+
+    </form>
+
+    <!-- Success message (hidden) -->
+    <div id="quote-success" style="display:none;background:rgba(var(--palt-rgb),0.06);border:1px solid var(--ruledk);padding:24px;margin-top:20px;text-align:center;">
+      <i class="fa-solid fa-circle-check" style="color:var(--palt);font-size:2rem;display:block;margin-bottom:12px;"></i>
+      <p style="font-family:'Barlow',sans-serif;font-weight:700;font-size:1.2rem;color:var(--palt);margin:0 0 8px;text-transform:uppercase;letter-spacing:0.06em;">Quote Request Sent!</p>
+      <p style="font-size:0.95rem;color:rgba(var(--palt-rgb),0.5);margin:0;">We'll be in touch within 24 hours to discuss your project.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════ -->
+<section id="about" style="background:var(--page);padding:clamp(56px,9vw,100px) 24px;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+
+    <!-- Text -->
+    <div>
+      <p class="sec-label" style="margin-bottom:1rem;">Our Story</p>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);color:var(--ink);margin:0 0 20px;">
+        Built in Columbus.<br>Growing Since 2019.
+      </h2>
+      <p style="font-family:'Barlow',sans-serif;font-size:1rem;color:var(--mid);line-height:1.75;max-width:52ch;margin:0 0 16px;">
+        Founded in Columbus in 2019, Lawn Care Landscaping LLC grew from a genuine passion for beautiful outdoor spaces into one of the Columbus area's trusted landscaping companies.
+      </p>
+      <p style="font-family:'Barlow',sans-serif;font-size:1rem;color:var(--mid);line-height:1.75;max-width:52ch;margin:0 0 32px;">
+        We're a local team — not a franchise. Every estimate is personal, every job is done right, and we stand behind our work. Whether it's weekly mowing or a full patio build, you deal with us directly, start to finish.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;">
+        <div class="about-badge">
+          <i class="fa-solid fa-shield-halved" style="color:var(--dim);font-size:1.2rem;"></i>
+          <div>
+            <div style="font-family:'Barlow',sans-serif;font-weight:700;font-size:0.9rem;letter-spacing:0.06em;color:var(--ink);text-transform:uppercase;">Licensed &amp; Insured</div>
+            <div style="font-size:0.78rem;color:var(--dim);">Fully covered for your peace of mind</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <i class="fa-solid fa-calendar-check" style="color:var(--dim);font-size:1.2rem;"></i>
+          <div>
+            <div style="font-family:'Barlow',sans-serif;font-weight:700;font-size:0.9rem;letter-spacing:0.06em;color:var(--ink);text-transform:uppercase;">Est. 2019</div>
+            <div style="font-size:0.78rem;color:var(--dim);">5+ years serving Columbus metro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual block — editorial flat -->
+    <div style="position:relative;max-width:100%;overflow:visible;" id="about-visual">
+      <div style="background:var(--palt);border:1px solid var(--rule);padding:3rem;display:flex;flex-direction:column;justify-content:space-between;min-height:380px;">
+        <span style="font-family:'Anton',sans-serif;font-size:6rem;line-height:1;color:var(--rule);user-select:none;">LC</span>
+        <div>
+          <p style="font-family:'Barlow',sans-serif;font-size:1.2rem;color:var(--ink);font-style:italic;font-weight:300;line-height:1.4;margin:0 0 1.5rem;">
+            "A great lawn starts with people who actually care."
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;">
+            <span style="font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;border:1px solid var(--rule);padding:6px 12px;color:var(--mid);font-family:'Barlow',sans-serif;">Columbus Native</span>
+            <span style="font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;border:1px solid var(--rule);padding:6px 12px;color:var(--mid);font-family:'Barlow',sans-serif;">Licensed &amp; Insured</span>
+            <span style="font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;border:1px solid var(--rule);padding:6px 12px;color:var(--mid);font-family:'Barlow',sans-serif;">Since 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════ -->
+<section style="background:var(--palt);padding:clamp(56px,9vw,100px) 24px;">
+  <div style="max-width:1100px;margin:0 auto;">
+
+    <div style="margin-bottom:3.5rem;">
+      <p class="sec-label" style="margin-bottom:1rem;">What Columbus Says</p>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);color:var(--ink);margin:0;">
+        Honest reviews.
+      </h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+
+      <blockquote style="margin:0;">
+        <div class="testimonial-card">
+          <div style="display:flex;gap:3px;margin-bottom:16px;">
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <span class="sr-only">Rated 5 out of 5 stars</span>
+          </div>
+          <p style="font-family:'Barlow',sans-serif;font-size:1.1rem;font-weight:600;color:var(--mid);line-height:1.7;margin:0 0 20px;">
+            "They installed a paver patio in our backyard last summer and it completely changed how we use our outdoor space. Solid work, fair price, and they cleaned up better than they found it. Highly recommend."
+          </p>
+          <footer style="display:flex;align-items:center;gap:12px;">
+            <div style="width:32px;height:1px;background:var(--ink);flex-shrink:0;"></div>
+            <cite style="font-style:normal;font-family:'Barlow',sans-serif;font-size:0.75rem;color:var(--dim);letter-spacing:0.06em;">Mike R. — East Columbus, Paver Patio</cite>
+          </footer>
+        </div>
+      </blockquote>
+
+      <blockquote style="margin:0;">
+        <div class="testimonial-card">
+          <div style="display:flex;gap:3px;margin-bottom:16px;">
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <span class="sr-only">Rated 5 out of 5 stars</span>
+          </div>
+          <p style="font-family:'Barlow',sans-serif;font-size:1.1rem;font-weight:600;color:var(--mid);line-height:1.7;margin:0 0 20px;">
+            "I've had them on a weekly lawn maintenance schedule for two years now. My yard looks better than it ever has. They show up on time, every time, and never cut corners. Worth every penny."
+          </p>
+          <footer style="display:flex;align-items:center;gap:12px;">
+            <div style="width:32px;height:1px;background:var(--ink);flex-shrink:0;"></div>
+            <cite style="font-style:normal;font-family:'Barlow',sans-serif;font-size:0.75rem;color:var(--dim);letter-spacing:0.06em;">Sarah L. — New Albany, Weekly Lawn Care</cite>
+          </footer>
+        </div>
+      </blockquote>
+
+      <blockquote style="margin:0;">
+        <div class="testimonial-card">
+          <div style="display:flex;gap:3px;margin-bottom:16px;">
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" style="color:var(--ink);font-size:0.8rem;" aria-hidden="true"></i>
+            <span class="sr-only">Rated 5 out of 5 stars</span>
+          </div>
+          <p style="font-family:'Barlow',sans-serif;font-size:1.1rem;font-weight:600;color:var(--mid);line-height:1.7;margin:0 0 20px;">
+            "Called them about a retaining wall we'd been putting off for three years. They came out, quoted it fast, and started within two weeks. The wall looks amazing and we haven't had any slope erosion since. Wish we'd called sooner."
+          </p>
+          <footer style="display:flex;align-items:center;gap:12px;">
+            <div style="width:32px;height:1px;background:var(--ink);flex-shrink:0;"></div>
+            <cite style="font-style:normal;font-family:'Barlow',sans-serif;font-size:0.75rem;color:var(--dim);letter-spacing:0.06em;">David T. — Gahanna, Retaining Wall</cite>
+          </footer>
+        </div>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SERVICE AREA
+═══════════════════════════════════════════ -->
+<section style="background:var(--ink);padding:clamp(48px,7vw,80px) 24px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div>
+      <p class="sec-label" style="color:rgba(var(--palt-rgb),0.3);margin-bottom:1rem;">Coverage</p>
+      <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--palt);margin:0 0 16px;">
+        Columbus metro and the surrounding suburbs.
+      </h2>
+      <p style="font-family:'Barlow',sans-serif;font-size:0.95rem;color:rgba(var(--palt-rgb),0.5);line-height:1.75;margin:0;max-width:64ch;">
+        We run crews throughout Columbus, Gahanna, New Albany, Westerville, Reynoldsburg, Dublin, Pickerington, Hilliard, Grove City, Upper Arlington, Bexley, and Whitehall. Not sure if you're in range? Call us and we'll tell you in 30 seconds.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section id="contact" style="background:var(--page);padding:clamp(56px,9vw,100px) 24px;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+
+    <div>
+      <p class="sec-label" style="margin-bottom:1rem;">Get In Touch</p>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);color:var(--ink);margin:0 0 8px;">
+        Reach Out
+      </h2>
+      <p style="font-family:'Barlow',sans-serif;font-size:1rem;color:var(--dim);max-width:42ch;line-height:1.7;margin:0 0 32px;">
+        Ready to get started, or just have a question? We're always happy to talk. No pressure, no hard sell.
+      </p>
+
+      <div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div style="font-family:'Barlow',sans-serif;font-weight:700;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;">Phone</div>
+            <a href="tel:+16142854700" style="font-family:'Barlow',sans-serif;font-weight:700;font-size:1.25rem;color:var(--ink);text-decoration:none;letter-spacing:0.02em;">(614) 285-4700</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div style="font-family:'Barlow',sans-serif;font-weight:700;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;">Email</div>
+            <a href="mailto:info@lawncarelandscapingllc.com" style="font-family:'Barlow',sans-serif;font-size:1rem;color:var(--ink);text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">info@lawncarelandscapingllc.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-brands fa-facebook-f"></i></div>
+          <div>
+            <div style="font-family:'Barlow',sans-serif;font-weight:700;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;">Facebook</div>
+            <a href="https://facebook.com/LawnCareLandscapingOhio" target="_blank" rel="noopener" style="font-family:'Barlow',sans-serif;font-size:1rem;color:var(--ink);text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">LawnCareLandscapingOhio</a>
+            <span style="display:block;font-size:0.8rem;color:var(--dim);">Follow us for project photos</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <div style="font-family:'Barlow',sans-serif;font-weight:700;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;">Response Time</div>
+            <span style="font-family:'Barlow',sans-serif;font-size:1rem;color:var(--mid);">Within 24 hours. Usually same day.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA block -->
+    <div style="background:var(--palt);padding:40px;border:1px solid var(--rule);">
+      <h3 style="font-size:1.8rem;color:var(--ink);margin:0 0 12px;">
+        Prefer to talk first?
+      </h3>
+      <p style="font-family:'Barlow',sans-serif;font-size:1rem;color:var(--mid);line-height:1.7;margin:0 0 24px;max-width:38ch;">
+        Call us directly and we'll talk through your project in five minutes — no forms, no pressure.
+      </p>
+      <a href="tel:+16142854700" class="btn-primary" style="font-size:0.75rem;padding:14px 28px;width:100%;justify-content:center;">
+        <i class="fa-solid fa-phone"></i> (614) 285-4700
+      </a>
+      <p style="font-family:'Barlow',sans-serif;font-size:0.82rem;color:var(--dim);margin:14px 0 0;text-align:center;">
+        Or fill out the quote form above — your choice.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer style="background:var(--ink);padding:40px 24px;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;">
+
+    <div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <i class="fa-solid fa-leaf" style="color:rgba(var(--palt-rgb),0.45);font-size:0.9rem;"></i>
+        <span style="font-family:'Barlow',sans-serif;font-weight:700;font-size:1rem;letter-spacing:0.04em;color:var(--palt);">
+          Lawn Care Landscaping LLC
+        </span>
+      </div>
+      <div style="font-size:0.82rem;color:rgba(var(--palt-rgb),0.4);">Columbus, OH 43000 &nbsp;|&nbsp; Licensed &amp; Insured</div>
+      <div style="font-size:0.82rem;margin-top:4px;">
+        <a href="tel:+16142854700" style="color:var(--ghost);text-decoration:none;">(614) 285-4700</a>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:16px;">
+      <a href="https://facebook.com/LawnCareLandscapingOhio" target="_blank" rel="noopener"
+        style="width:36px;height:36px;border:1px solid var(--ruledk);display:flex;align-items:center;justify-content:center;color:rgba(var(--palt-rgb),0.45);font-size:0.85rem;text-decoration:none;transition:border-color 0.15s,color 0.15s;"
+        onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--ruledk)';this.style.color='rgba(var(--palt-rgb),0.45)'">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
+
+    <div style="font-size:0.78rem;color:rgba(var(--palt-rgb),0.3);">
+      &copy; 2026 Lawn Care Landscaping LLC. All rights reserved.<br>Columbus, OH &nbsp;&mdash;&nbsp; Established 2019
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+
+  // Close mobile nav when clicking nav links
+  document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('open');
+    });
+  });
+
+  // Quote form
+  function handleQuoteSubmit(e) {
+    e.preventDefault();
+    document.querySelector('#quote form').style.display = 'none';
+    document.getElementById('quote-success').style.display = 'block';
+    document.getElementById('quote-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // Smooth scroll for same-page anchors with offset for sticky nav
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const navHeight = document.getElementById('main-nav').offsetHeight;
+        const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 8;
+        window.scrollTo({ top: targetTop, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Simple scroll-reveal for sections
+  const revealEls = document.querySelectorAll('section, footer');
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06 });
+
+  revealEls.forEach(function(el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+    observer.observe(el);
+  });
+
+  // Responsive: collapse service split on mobile
+  function handleResize() {
+    const split = document.querySelector('#services-split');
+    if (split) {
+      if (window.innerWidth < 768) {
+        split.style.gridTemplateColumns = '1fr';
+      } else {
+        split.style.gridTemplateColumns = '1fr 1fr';
+      }
+    }
+    const about = document.querySelector('#about > div');
+    if (about) {
+      if (window.innerWidth < 900) {
+        about.style.gridTemplateColumns = '1fr';
+      } else {
+        about.style.gridTemplateColumns = '1fr 1fr';
+      }
+    }
+    const contact = document.querySelector('#contact > div');
+    if (contact) {
+      if (window.innerWidth < 900) {
+        contact.style.gridTemplateColumns = '1fr';
+      } else {
+        contact.style.gridTemplateColumns = '1fr 1fr';
+      }
+    }
+    const quote = document.querySelector('#quote form');
+    if (quote) {
+      if (window.innerWidth < 640) {
+        quote.style.gridTemplateColumns = '1fr';
+      } else {
+        quote.style.gridTemplateColumns = '1fr 1fr';
+      }
+    }
+  }
+
+  window.addEventListener('resize', handleResize);
+  handleResize();
+</script>
+
+</body>
+</html>
